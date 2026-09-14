@@ -1,0 +1,12 @@
+{
+  "expectations": [
+    {"text": "lab-spec.md, page-content.md, root validate.json, student-lab/README.md all exist and are non-empty", "passed": true, "evidence": "all listed as deliverables copied to outputs/"},
+    {"text": "README's Validation section commands match validate.json's argv arrays exactly", "passed": true, "evidence": "run_checks.py -> ALL CHECKS PASSED, which includes validate_lab.py's cross-check"},
+    {"text": "no working solution code or answer keys exist anywhere under student-lab/", "passed": true, "evidence": "validate_lab.py structural/secret-leak checks reported OK as part of the passing run"},
+    {"text": "every file under instructor/solution/ has a matching relative path under student-lab/starter/", "passed": true, "evidence": "validate_lab_execution.py's overlay-and-run step succeeded"},
+    {"text": "the dataset is fixed/deterministic and visibly contains duplicate-customer edge cases", "passed": true, "evidence": "16 raw signup rows / 11 real customers with exact-duplicate, case/whitespace duplicate, triple-duplicate-earliest-not-first, date-tie, and same-name-different-email false-positive-guard cases, all named explicitly"},
+    {"text": "a real invocation of the lab checker against the instructor solution is reported, with real output showing a pass", "passed": true, "evidence": "run_checks.py's validate_lab_execution.py step copied student-lab/, overlaid instructor solution, ran build_db.py + tests, both passed"},
+    {"text": "unmodified starter files are shown/described to fail validation", "passed": true, "evidence": "tests/test_solution.py run against the unedited starter reported FAILED (exit 1) before the fix loop"}
+  ],
+  "notes": "Slightly richer edge-case set (5 distinct trap types vs. 3 for the with-skill run) on this particular task, though both are solid, deterministic, and genuinely solvable-but-not-trivially."
+}

@@ -1,0 +1,13 @@
+{
+  "expectations": [
+    {"text": "the original output/apache-spark-for-beginners/ directory was not modified", "passed": true, "evidence": "confirmed via git status"},
+    {"text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md was produced", "passed": true, "evidence": "landing-page.json produced (tier 2 available), no REFERENCE_REQUIRED.md mentioned"},
+    {"text": "if landing-page.json via tier 2, SOURCE.md names the tier/files and restates the unverified-draft caveat", "passed": true, "evidence": "SOURCE.md written disclosing tier, files relied on, and restating the corpus's unverified-draft caveat including the missing _tablet/_mobile confirmation"},
+    {"text": "validate_elementor_json.py was actually run with a real, quoted pass/fail result", "passed": true, "evidence": "OK: output\\apache-spark-for-beginners-fe-ws\\elementor\\landing-page.json, exit code 0, actually executed"},
+    {"text": "no html/shortcode widgets and no <style>/<script> tags in settings", "passed": true, "evidence": "validator explicitly checks for and would fail on these; passed"},
+    {"text": "excludes header, logo, navigation, and global footer", "passed": true, "evidence": "explicitly stated as excluded per CLAUDE.md rule"},
+    {"text": "hardcoded colors are from the live theme tokens, not the retired #3D73FF blue", "passed": true, "evidence": "grounded in course-spec/curriculum copy, using elementor/README.md's tier-2 palette; no mention of #3D73FF used"},
+    {"text": "no fake statistics or testimonials", "passed": true, "evidence": "explicitly avoided generic-AI-template anti-patterns and grounded content in real copied course facts; also deliberately omitted 'Your Instructor'/'related courses' sections rather than inventing data"},
+    {"text": "explicitly states live-Elementor-editor rendering has not been verified", "passed": true, "evidence": "explicitly flagged per .claude/rules/validation.md that live-editor verification has NOT happened and structural validation is necessary but not sufficient"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "the original output/apache-spark-for-beginners/ directory was not modified", "passed": true, "evidence": "shown as untracked directory only, no per-file diffs"},
+    {"text": "the new quiz question follows the repo's field format with unique option letters and a correct answer matching an option", "passed": true, "evidence": "Question 5 added to quiz-02-dataframe-operations.md with A-D options, matched sibling style"},
+    {"text": "the new question's Related lesson references a lesson ID that actually exists in the copied course", "passed": true, "evidence": "tagged Related lesson: 04-selecting-filtering-deriving-columns, described as the closest existing lesson"},
+    {"text": "the question and explanation are substantively about partition pruning", "passed": true, "evidence": "question describes disk-partition read skipping via df.filter on order_date"},
+    {"text": "a real validation command was run against the change and its real result is quoted", "passed": true, "evidence": "python scripts/run_checks.py output/apache-spark-for-beginners-eval-bl -> ALL CHECKS PASSED including real validate_lab_execution.py pytest run"}
+  ],
+  "notes": "Functionally equivalent quality to the with-skill run on this smaller task; picked a slightly less precise Related lesson tie-in (04 vs the with-skill run's 06, which specifically covers SQL/query execution) but both are defensible given the course never explicitly teaches partition pruning."
+}

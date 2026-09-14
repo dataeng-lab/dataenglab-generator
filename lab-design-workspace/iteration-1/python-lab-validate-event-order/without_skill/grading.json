@@ -1,0 +1,12 @@
+{
+  "expectations": [
+    {"text": "lab-spec.md, page-content.md, root validate.json, student-lab/README.md all exist and are non-empty", "passed": true, "evidence": "all listed among deliverables"},
+    {"text": "README's Validation section commands match validate.json's argv arrays exactly", "passed": true, "evidence": "run_lab_checks.py -> ALL LAB CHECKS PASSED, includes this cross-check"},
+    {"text": "no working solution code or answer keys exist anywhere under student-lab/", "passed": true, "evidence": "validate_lab.py structural/leak check reported OK"},
+    {"text": "every file under instructor/solution/ has a matching relative path under student-lab/starter/", "passed": true, "evidence": "validate_lab_execution.py overlay-and-run succeeded end to end"},
+    {"text": "the CSV dataset is fixed/deterministic and visibly contains out-of-order timestamp edge cases", "passed": true, "evidence": "IoT sensor fleet CSV in network-arrival (not chronological) order, causing a false alarm + a missed real overheat event as the deliberate bug"},
+    {"text": "a real invocation of the lab checker against the instructor solution is reported, with real output showing a pass", "passed": true, "evidence": "run_lab_checks.py exit 0, ALL LAB CHECKS PASSED, with real setup+validate commands executed in a temp overlay"},
+    {"text": "the test suite fails (non-zero exit) against unmodified starter files", "passed": true, "evidence": "tests/test_solution.py against unmodified starter correctly FAILED (exit 1, NotImplementedError)"}
+  ],
+  "notes": "Very comparable quality and rigor to the with-skill run; both used a real IoT/sensor timestamp-ordering scenario with a genuinely deterministic dataset and a real fail-then-pass validation cycle."
+}

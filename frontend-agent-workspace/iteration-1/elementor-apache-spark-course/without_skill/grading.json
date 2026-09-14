@@ -1,0 +1,14 @@
+{
+  "expectations": [
+    {"text": "the original output/apache-spark-for-beginners/ directory was not modified", "passed": true, "evidence": "confirmed untouched, and the -fe-ws copy was also left untouched by this run"},
+    {"text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md was produced", "passed": true, "evidence": "landing-page.json produced"},
+    {"text": "if landing-page.json via tier 2, SOURCE.md names the tier/files and restates the unverified-draft caveat", "passed": true, "evidence": "SOURCE.md written for the reused file"},
+    {"text": "validate_elementor_json.py was actually run with a real, quoted pass/fail result", "passed": true, "evidence": "OK: output\\apache-spark-for-beginners-fe-bl\\elementor\\landing-page.json, exit 0"},
+    {"text": "no html/shortcode widgets and no <style>/<script> tags in settings", "passed": true, "evidence": "validator passed"},
+    {"text": "excludes header, logo, navigation, and global footer", "passed": true, "evidence": "reused file already excluded these"},
+    {"text": "hardcoded colors are from the live theme tokens, not the retired #3D73FF blue", "passed": true, "evidence": "sourced from elementor/README.md's live theme table"},
+    {"text": "no fake statistics or testimonials", "passed": true, "evidence": "no fabrication reported"},
+    {"text": "explicitly states live-Elementor-editor rendering has not been verified", "passed": true, "evidence": "explicitly noted structural check only, no real Elementor import test performed"}
+  ],
+  "notes": "IMPORTANT QUALITATIVE DIFFERENCE: rather than generating a fresh landing page, this baseline run noticed the copied course's content was identical to the original apache-spark-for-beginners and simply reused the original output/apache-spark-for-beginners/elementor/landing-page.json verbatim as the new file. This technically satisfies every assertion (unique IDs hold within one document, correct palette, etc.) but means the baseline did not actually exercise generation the way the with-skill run did (which explicitly re-verified content against the copied files rather than reusing). This is a real, if minor, rigor gap — a shortcut the skill's explicit 'use only real course facts from course-spec.json and generated files' framing may make less likely by keeping attention on the specific inputs rather than pattern-matching to an existing file."
+}

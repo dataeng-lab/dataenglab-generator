@@ -1,0 +1,17 @@
+{
+  "eval_id": 0,
+  "eval_name": "new-course-pandas-cleaning",
+  "prompt": "Create a new, small, complete DataEngLab course teaching pandas null-handling and deduplication basics for beginners (~90 minutes total, at least 50% practical, one practical lab).",
+  "assertions": [
+    {"name": "course-spec-valid", "text": "course-spec.json exists, parses as JSON, and has all required fields"},
+    {"name": "slug-matches-dir", "text": "course-spec.json's slug matches the output directory name"},
+    {"name": "practical-time-50pct", "text": "duration_minutes.practical / (lecture+practical) is at least 0.5"},
+    {"name": "lessons-full-headings", "text": "every lesson has all 10 required ## headings, non-empty"},
+    {"name": "quizzes-well-formed", "text": "every quiz question has Type, Difficulty, Related lesson, Question, Options, Correct answer, Explanation"},
+    {"name": "instructor-separation", "text": "no solution code or instructor-only content under student-lab/"},
+    {"name": "lab-execution-actually-run", "text": "a real lab-execution validator command was run with real pass/fail output quoted"},
+    {"name": "review-actually-run", "text": "course-reviewer subagent was actually invoked and review-report.md has a PASS/FAIL verdict"},
+    {"name": "elementor-exclusive-outcome", "text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md exists; SOURCE.md present if tier 2"},
+    {"name": "no-fabrication", "text": "no fake statistics, testimonials, or unverifiable claims"}
+  ]
+}

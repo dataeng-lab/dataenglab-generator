@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "update-course-add-quiz-question",
+  "prompt": "Add one more quiz question about partition pruning to an existing DataEngLab course (isolated copy of apache-spark-for-beginners), as an update rather than a fresh generation.",
+  "assertions": [
+    {"name": "original-untouched", "text": "the original output/apache-spark-for-beginners/ directory was not modified"},
+    {"name": "new-question-well-formed", "text": "the new quiz question follows the repo's field format with unique option letters and a correct answer matching an option"},
+    {"name": "related-lesson-real", "text": "the new question's Related lesson references a lesson ID that actually exists in the copied course"},
+    {"name": "topically-correct", "text": "the question and explanation are substantively about partition pruning"},
+    {"name": "validation-actually-run", "text": "a real validation command was run against the change and its real result is quoted"}
+  ]
+}

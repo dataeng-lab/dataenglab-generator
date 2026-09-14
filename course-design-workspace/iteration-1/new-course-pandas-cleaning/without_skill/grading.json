@@ -1,0 +1,15 @@
+{
+  "expectations": [
+    {"text": "course-spec.json exists, parses as JSON, and has all required fields", "passed": true, "evidence": "run_checks.py run 6 times, final result ALL CHECKS PASSED including validate_spec.py"},
+    {"text": "course-spec.json's slug matches the output directory name", "passed": true, "evidence": "directory output/pandas-data-cleaning-basics-eval-bl used consistently; validate_spec.py slug check passed"},
+    {"text": "duration_minutes.practical / (lecture+practical) is at least 0.5", "passed": true, "evidence": "validate_spec.py is part of the final ALL CHECKS PASSED run"},
+    {"text": "every lesson has all 10 required ## headings, non-empty", "passed": true, "evidence": "validate_content.py part of final ALL CHECKS PASSED run"},
+    {"text": "every quiz question has Type, Difficulty, Related lesson, Question, Options, Correct answer, Explanation", "passed": true, "evidence": "same validate_content.py pass; final review noted only a disclosure-style minor finding about quiz questions, not a format defect"},
+    {"text": "no solution code or instructor-only content under student-lab/", "passed": true, "evidence": "the SAME literal-solution-leak defect relocated across 4 straight course-reviewer rounds (README->starter comments->lesson examples->troubleshooting) before round 5 finally came back clean PASS with no leak finding"},
+    {"text": "a real lab-execution validator command was run with real pass/fail output quoted", "passed": true, "evidence": "validate_lab_execution.py part of the passing run_checks.py; report explicitly describes real pytest execution and a real dataset verification pass"},
+    {"text": "course-reviewer subagent was actually invoked and review-report.md has a PASS/FAIL verdict", "passed": true, "evidence": "course-reviewer agent invoked 5 times directly (via Agent tool, not the skill) with real FAIL/FAIL/FAIL/FAIL/PASS verdicts"},
+    {"text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md exists; SOURCE.md present if tier 2", "passed": true, "evidence": "tier-2 landing-page.json + SOURCE.md produced and copied into outputs"},
+    {"text": "no fake statistics, testimonials, or unverifiable claims", "passed": true, "evidence": "final PASS verdict; only minor finding was about quiz questions reusing real column names, not fabrication"}
+  ],
+  "notes": "Took 4 real FAIL rounds (vs. 3 for the with-skill run) to fully stop the leaked-solution defect from simply relocating to a new file each round. Also used more tokens (304847 vs 232736) and more wall time (3636s vs 3062s) than the with-skill run for a comparable final result, and used the course-reviewer subagent directly (an Agent-tool subagent_type, not gated by the no-Skill-tool constraint) to get the same review-gate benefit."
+}

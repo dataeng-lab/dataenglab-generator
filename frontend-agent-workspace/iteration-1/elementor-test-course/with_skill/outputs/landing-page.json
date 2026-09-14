@@ -1,0 +1,662 @@
+{
+  "title": "Validate and Clean CSV Data with Python - Course Landing Page",
+  "type": "page",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "tcw0001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 16 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "tcw0002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 10 }
+          },
+          "elements": [
+            {
+              "id": "tcw0003",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Validate and Clean CSV Data with Python",
+                "header_size": "h1",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "tcw0004",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>A bookstore's daily order export hides missing prices, non-positive quantities, and duplicate rows caused by webhook retries. Learn to detect, quarantine, and deduplicate it with pandas before it reaches reporting.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "tcw0005",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Beginner</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">70 minutes (40 practical)</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Python 3.11+</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">pandas</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">pytest</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "tcw0006",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 10 }
+              },
+              "elements": [
+                {
+                  "id": "tcw0007",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Enroll Now",
+                    "link": { "url": "#enroll", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "tcw0008",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "View Curriculum",
+                    "link": { "url": "#curriculum", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#14151A",
+                    "border_color": "#E7E3D9"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "tcw0009",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 12 }
+              },
+              "elements": [
+                {
+                  "id": "tcw000a",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    { "id": "tcw000b", "elType": "widget", "widgetType": "heading", "settings": { "title": "3", "header_size": "h3", "title_color": "#14151A" }, "elements": [] },
+                    { "id": "tcw000c", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<span>Lessons</span>", "text_color": "#54575F" }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "tcw000d",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    { "id": "tcw000e", "elType": "widget", "widgetType": "heading", "settings": { "title": "2", "header_size": "h3", "title_color": "#14151A" }, "elements": [] },
+                    { "id": "tcw000f", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<span>Quizzes</span>", "text_color": "#54575F" }, "elements": [] }
+                  ]
+                },
+                {
+                  "id": "tcw0010",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    { "id": "tcw0011", "elType": "widget", "widgetType": "heading", "settings": { "title": "1", "header_size": "h3", "title_color": "#14151A" }, "elements": [] },
+                    { "id": "tcw0012", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<span>Hands-on lab</span>", "text_color": "#54575F" }, "elements": [] }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcw0020",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "tcw0021",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 } },
+          "elements": [
+            { "id": "tcw0022", "elType": "widget", "widgetType": "heading", "settings": { "title": "What You'll Learn", "header_size": "div", "title_color": "#5A4FE5" }, "elements": [] },
+            { "id": "tcw0023", "elType": "widget", "widgetType": "heading", "settings": { "title": "Skills you can apply directly to a messy CSV export.", "header_size": "h2", "title_color": "#14151A" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "tcw0024",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "tcw0025",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "tcw0026",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Explain why data must be validated before it is trusted for reporting.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw0027" },
+                      { "text": "Detect invalid records with pandas boolean masks.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw0028" },
+                      { "text": "Separate valid data from invalid data instead of silently dropping or crashing on it.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw0029" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "tcw002a",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "tcw002b",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Deduplicate records deterministically by a business key.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw002c" },
+                      { "text": "Verify a small data pipeline with automated tests.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw002d" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcw0030",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "tcw0031",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 } },
+          "elements": [
+            { "id": "tcw0032", "elType": "widget", "widgetType": "heading", "settings": { "title": "Who This Is For", "header_size": "div", "title_color": "#5A4FE5" }, "elements": [] },
+            { "id": "tcw0033", "elType": "widget", "widgetType": "heading", "settings": { "title": "Make sure this course matches where you're starting from.", "header_size": "h2", "title_color": "#14151A" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "tcw0034",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "tcw0035",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 50
+              },
+              "elements": [
+                { "id": "tcw0036", "elType": "widget", "widgetType": "heading", "settings": { "title": "Audience", "header_size": "h3", "title_color": "#14151A" }, "elements": [] },
+                { "id": "tcw0037", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Beginners who know basic Python syntax (variables, functions, loops) but have no prior data engineering experience.</p>", "text_color": "#54575F" }, "elements": [] }
+              ]
+            },
+            {
+              "id": "tcw0038",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 50
+              },
+              "elements": [
+                { "id": "tcw0039", "elType": "widget", "widgetType": "heading", "settings": { "title": "Prerequisites (Beginner level)", "header_size": "h3", "title_color": "#14151A" }, "elements": [] },
+                {
+                  "id": "tcw003a",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Basic Python (variables, functions, for loops). No pandas experience required.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw003b" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcw0040",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "custom_id": "curriculum"
+      },
+      "elements": [
+        {
+          "id": "tcw0041",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 } },
+          "elements": [
+            { "id": "tcw0042", "elType": "widget", "widgetType": "heading", "settings": { "title": "Curriculum", "header_size": "div", "title_color": "#5A4FE5" }, "elements": [] },
+            { "id": "tcw0043", "elType": "widget", "widgetType": "heading", "settings": { "title": "What you'll work through, lesson by lesson.", "header_size": "h2", "title_color": "#14151A" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "tcw0044",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "1. Data Validation Fundamentals (concepts)",
+                "tab_content": "Why Data Validation Matters (5 min)<br>Detecting Invalid and Duplicate Records with pandas (7 min)<br>Quiz: Validation Concepts &mdash; 4 questions (5 min)",
+                "_id": "tcw0045"
+              },
+              {
+                "tab_title": "2. Building the Clean/Quarantine Pipeline",
+                "tab_content": "Building a Clean/Quarantine Pipeline (8 min)<br>Quiz: Building the Pipeline &mdash; 4 questions (5 min)",
+                "_id": "tcw0046"
+              },
+              {
+                "tab_title": "3. Practical Lab: Clean the Bookstore Orders File (40 min)",
+                "tab_content": "Validate, quarantine, and deduplicate a 10-row orders.csv export with pandas, verified by an automated pytest suite.",
+                "_id": "tcw0047"
+              }
+            ],
+            "title_color": "#14151A",
+            "content_color": "#54575F",
+            "border_color": "#E7E3D9",
+            "faq_schema": "no"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "tcw0050",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": { "unit": "deg", "size": 160 }
+      },
+      "elements": [
+        {
+          "id": "tcw0051",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 } },
+          "elements": [
+            { "id": "tcw0052", "elType": "widget", "widgetType": "heading", "settings": { "title": "Practical Lab", "header_size": "div", "title_color": "#5A4FE5" }, "elements": [] },
+            { "id": "tcw0053", "elType": "widget", "widgetType": "heading", "settings": { "title": "Clean the Bookstore Orders File", "header_size": "h2", "title_color": "#14151A" }, "elements": [] }
+          ]
+        },
+        {
+          "id": "tcw0054",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "tcw0055",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 70 },
+              "elements": [
+                { "id": "tcw0056", "elType": "widget", "widgetType": "heading", "settings": { "title": "Business scenario", "header_size": "h4", "title_color": "#14151A" }, "elements": [] },
+                { "id": "tcw0057", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>A small online bookstore receives a daily CSV export of book orders from its e-commerce platform. The export regularly contains rows with a missing unit price, a zero or negative quantity, and duplicated order IDs caused by webhook retries. The reporting team cannot trust the numbers until the file is validated and cleaned.</p>", "text_color": "#54575F" }, "elements": [] },
+                { "id": "tcw0058", "elType": "widget", "widgetType": "heading", "settings": { "title": "Deliverable", "header_size": "h4", "title_color": "#14151A" }, "elements": [] },
+                { "id": "tcw0059", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>A clean_orders.py script that reads orders.csv, produces clean_orders.csv and quarantine_orders.csv, and passes the provided pytest suite.</p>", "text_color": "#54575F" }, "elements": [] },
+                { "id": "tcw005a", "elType": "widget", "widgetType": "heading", "settings": { "title": "Validation criteria", "header_size": "h4", "title_color": "#14151A" }, "elements": [] },
+                {
+                  "id": "tcw005b",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "pytest against tests/test_clean_orders.py exits with status 0.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw005c" },
+                      { "text": "clean_orders.csv contains exactly the valid, deduplicated rows (first occurrence kept per order_id).", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw005d" },
+                      { "text": "quarantine_orders.csv contains exactly the rows with a missing/invalid unit price or a non-positive quantity.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw005e" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "tcw005f",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 10 }, "_column_size": 30 },
+              "elements": [
+                { "id": "tcw0060", "elType": "widget", "widgetType": "heading", "settings": { "title": "Technologies", "header_size": "h4", "title_color": "#14151A" }, "elements": [] },
+                {
+                  "id": "tcw0061",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Python 3.11+</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">pandas</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">pytest</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">CSV</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "tcw0062",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Start the Lab",
+                    "link": { "url": "#", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcw0070",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "tcw0071",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 } },
+          "elements": [
+            { "id": "tcw0072", "elType": "widget", "widgetType": "heading", "settings": { "title": "What You'll Produce", "header_size": "div", "title_color": "#5A4FE5" }, "elements": [] },
+            { "id": "tcw0073", "elType": "widget", "widgetType": "heading", "settings": { "title": "A working, tested data-cleaning script.", "header_size": "h2", "title_color": "#14151A" }, "elements": [] },
+            {
+              "id": "tcw0074",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>You leave with <code>clean_orders.py</code>, a script that reads <code>orders.csv</code> and produces <code>clean_orders.csv</code> and <code>quarantine_orders.csv</code>. The provided pytest suite (<code>pytest tests/</code>) checks your output automatically and exits with status 0 only when the validation, quarantine, and deduplication logic is correct.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "tcw0075",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "tcw0076",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "tcw0077",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Explaining why data must be validated before it is trusted for reporting.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw0078" },
+                      { "text": "Building pandas boolean masks to detect invalid records.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw0079" },
+                      { "text": "Separating valid data from invalid data instead of silently dropping or crashing on it.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw007a" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "tcw007b",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "tcw007c",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Deduplicating records deterministically by a business key.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw007d" },
+                      { "text": "Verifying a small data pipeline with automated tests.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "tcw007e" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcw0080",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": { "unit": "deg", "size": 160 },
+        "custom_id": "enroll"
+      },
+      "elements": [
+        {
+          "id": "tcw0081",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 } },
+          "elements": [
+            { "id": "tcw0082", "elType": "widget", "widgetType": "heading", "settings": { "title": "Enroll", "header_size": "div", "title_color": "#5A4FE5" }, "elements": [] },
+            { "id": "tcw0083", "elType": "widget", "widgetType": "heading", "settings": { "title": "Ready to start Validate and Clean CSV Data with Python?", "header_size": "h2", "title_color": "#14151A" }, "elements": [] },
+            {
+              "id": "tcw0084",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Beginner level. About 70 minutes total, 40 of them hands-on writing and testing a real pandas validation pipeline.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "tcw0085",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enroll Now",
+                "link": { "url": "#", "is_external": "", "nofollow": "" },
+                "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                "background_color": "#14151A",
+                "button_text_color": "#FFFFFF"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

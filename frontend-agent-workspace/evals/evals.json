@@ -1,0 +1,34 @@
+{
+  "skill_name": "frontend-agent",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "elementor-apache-spark-course",
+      "prompt": "Generate the Elementor landing page for an isolated copy of the existing apache-spark-for-beginners course.",
+      "assertions": [
+        {"name": "original-untouched", "text": "the original output/apache-spark-for-beginners/ directory was not modified"},
+        {"name": "exclusive-outcome", "text": "exactly one of elementor/landing-page.json or elementor/REFERENCE_REQUIRED.md was produced"},
+        {"name": "source-md-if-tier2", "text": "if landing-page.json was produced via tier 2, SOURCE.md exists naming the tier and specific source files used, and restates the unverified-draft caveat"},
+        {"name": "validator-actually-run", "text": "scripts/validate_elementor_json.py was actually run against the output with a real, quoted pass/fail result"},
+        {"name": "no-banned-widgets", "text": "if landing-page.json was produced, it contains no html/shortcode widgets and no <style>/<script> tags in settings"},
+        {"name": "no-header-footer-nav", "text": "the page excludes header, logo, navigation, and global footer elements"},
+        {"name": "correct-palette", "text": "any hardcoded hex colors used are from the live theme token set (e.g. #5A4FE5, #14151A, #FBFBF8, etc.), not the retired #3D73FF blue"},
+        {"name": "no-fabrication", "text": "no fake statistics or testimonials appear in the generated copy"},
+        {"name": "discloses-unverified-live-rendering", "text": "the report explicitly states that live-Elementor-editor rendering has not been verified"}
+      ]
+    },
+    {
+      "id": 1,
+      "eval_name": "elementor-test-course",
+      "prompt": "Generate the Elementor landing page for an isolated copy of the existing test-course.",
+      "assertions": [
+        {"name": "original-untouched", "text": "the original output/test-course/ directory was not modified"},
+        {"name": "exclusive-outcome", "text": "exactly one of elementor/landing-page.json or elementor/REFERENCE_REQUIRED.md was produced"},
+        {"name": "fresh-tier-judgment", "text": "the tier decision was made fresh for this run rather than blindly copying test-course's prior REFERENCE_REQUIRED.md verdict"},
+        {"name": "validator-actually-run", "text": "scripts/validate_elementor_json.py was actually run against the output with a real, quoted pass/fail result"},
+        {"name": "no-banned-widgets", "text": "if landing-page.json was produced, it contains no html/shortcode widgets and no <style>/<script> tags in settings"},
+        {"name": "correct-palette", "text": "any hardcoded hex colors used are from the live theme token set, not the retired #3D73FF blue"}
+      ]
+    }
+  ]
+}

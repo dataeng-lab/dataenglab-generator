@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "the original output/test-course/ directory was not modified", "passed": true, "evidence": "confirmed via git status, only a pre-existing prior diff, nothing new"},
+    {"text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md was produced", "passed": true, "evidence": "landing-page.json produced with 75 elements"},
+    {"text": "the tier decision was made fresh rather than blindly copying test-course's prior REFERENCE_REQUIRED.md verdict", "passed": true, "evidence": "explicitly re-verified tier 1 absence and tier 2 corpus validity by parsing all 12 corpus JSON files fresh, correctly overriding the stale REFERENCE_REQUIRED.md verdict"},
+    {"text": "validate_elementor_json.py was actually run with a real, quoted pass/fail result", "passed": true, "evidence": "OK: output\\test-course-fe-ws\\elementor\\landing-page.json, exit 0; independently spot-checked 75/75 unique IDs"},
+    {"text": "no html/shortcode widgets and no <style>/<script> tags in settings", "passed": true, "evidence": "explicitly spot-checked, none found"},
+    {"text": "hardcoded colors are from the live theme tokens, not the retired #3D73FF blue", "passed": true, "evidence": "used elementor/README.md's live theme tokens"}
+  ],
+  "notes": "Handled the ambiguous case well: correctly overrode a stale REFERENCE_REQUIRED.md verdict already sitting in the real test-course output by re-deriving the tier decision fresh, and deliberately omitted template sections (Instructor, Related Courses) it had no real data for rather than fabricating content."
+}

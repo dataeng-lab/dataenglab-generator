@@ -1,0 +1,80 @@
+{
+  "title": "Pandas Data Cleaning Basics: Nulls and Duplicates",
+  "slug": "pandas-data-cleaning-basics-eval-ws",
+  "audience": "Complete beginners to data cleaning who know basic Python syntax (variables, functions, lists) but have never used pandas before.",
+  "level": "beginner",
+  "prerequisites": [
+    "Basic Python (variables, functions, lists, running a .py script). No prior pandas or data engineering experience required."
+  ],
+  "outcomes": [
+    "Explain why missing values and duplicate rows silently corrupt reports and metrics.",
+    "Detect missing values in a pandas DataFrame with isna() and isnull().",
+    "Fill or drop missing values deliberately with fillna() and dropna(), choosing the right strategy per column.",
+    "Detect duplicate rows with duplicated(), including partial-key duplicates.",
+    "Remove duplicate rows deterministically with drop_duplicates() while keeping a defined row.",
+    "Verify a small cleaning script with automated tests."
+  ],
+  "technologies": ["Python 3.11+", "pandas", "pytest", "CSV"],
+  "business_scenario": "A small online newsletter platform exports its subscriber signup list from a web form to a CSV file every night. The export regularly has blank rows where the visitor skipped an optional field (like a name or referral source), and it contains duplicate rows for the same email address because the signup form silently retries when a visitor double-clicks 'Subscribe'. The marketing team cannot count real subscribers or send a clean welcome email batch until the file is cleaned.",
+  "deliverable": "A clean_subscribers.py script that reads subscribers.csv, produces clean_subscribers.csv (one row per unique, non-blank-email subscriber) and a subscribers_report.txt summary, and passes the provided pytest suite.",
+  "validation_criteria": [
+    "pytest against tests/test_clean_subscribers.py exits with status 0.",
+    "clean_subscribers.csv contains no rows with a missing email address.",
+    "clean_subscribers.csv contains exactly one row per unique email address (first signup kept, earliest signup_date wins on ties).",
+    "Missing optional text fields (name, referral_source) are filled with the literal string 'unknown' rather than left blank or dropped."
+  ],
+  "acquired_skills": [
+    "Detecting missing values in a DataFrame with isna()/isnull().",
+    "Choosing between fillna() and dropna() per column based on business rules.",
+    "Detecting exact and key-based duplicate rows with duplicated().",
+    "Removing duplicates deterministically with drop_duplicates(keep=...).",
+    "Writing a small deterministic pandas cleaning script validated by automated tests."
+  ],
+  "duration_minutes": {
+    "lecture": 40,
+    "practical": 50,
+    "practical_breakdown_note": "The 50 practical minutes are NOT all spent on the final lab: 20 minutes are the four lessons' own short mini-exercises (5 minutes each, listed per-lesson below), and the remaining 30 minutes are the separate final practical lab (student-lab/). 20 + 30 = 50. This note exists so lesson-level practical minutes and the lab's own estimated duration are never double-counted against each other."
+  },
+  "curriculum": [
+    {
+      "topic": "Finding and Handling Missing Data",
+      "lessons": [
+        {
+          "id": "01-detecting-missing-values",
+          "title": "Detecting Missing Values with isna()",
+          "objective": "Use isna()/isnull() and column-level summaries to find and count missing values in a pandas DataFrame.",
+          "minutes_lecture": 10,
+          "minutes_practical": 5
+        },
+        {
+          "id": "02-filling-and-dropping-missing-values",
+          "title": "Filling and Dropping Missing Values Deliberately",
+          "objective": "Apply fillna() and dropna() with an explicit, column-specific strategy instead of removing all incomplete rows by default.",
+          "minutes_lecture": 10,
+          "minutes_practical": 5
+        }
+      ],
+      "quiz": "quiz-01-missing-values.md"
+    },
+    {
+      "topic": "Detecting and Removing Duplicate Rows",
+      "lessons": [
+        {
+          "id": "03-detecting-duplicate-rows",
+          "title": "Detecting Duplicate Rows with duplicated()",
+          "objective": "Use duplicated() with default and subset arguments to detect exact-row and business-key duplicates.",
+          "minutes_lecture": 10,
+          "minutes_practical": 5
+        },
+        {
+          "id": "04-removing-duplicates-deterministically",
+          "title": "Removing Duplicates Deterministically with drop_duplicates()",
+          "objective": "Use drop_duplicates() with keep and subset to remove duplicate rows in a reproducible, documented way.",
+          "minutes_lecture": 10,
+          "minutes_practical": 5
+        }
+      ],
+      "quiz": "quiz-02-duplicate-rows.md"
+    }
+  ]
+}

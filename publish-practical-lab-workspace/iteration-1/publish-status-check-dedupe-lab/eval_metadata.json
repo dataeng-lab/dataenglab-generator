@@ -1,0 +1,13 @@
+{
+  "eval_id": 1,
+  "eval_name": "publish-status-check-dedupe-lab",
+  "prompt": "User asks: 'is dedupe-late-arriving-orders live yet? if not, put it up.' (isolated copy; run must stop before any real publish action).",
+  "assertions": [
+    {"name": "no-live-tool-called", "text": "CRITICAL: no Novamira/browser-automation/live-site tool was actually called"},
+    {"name": "original-untouched", "text": "the original output/dedupe-late-arriving-orders/ directory was not modified"},
+    {"name": "correct-not-live-answer", "text": "correctly identifies the lab is not yet published rather than fabricating a 'yes it's live' claim"},
+    {"name": "labs-page-produced-and-valid", "text": "labs-page.json produced and validate_elementor_json.py actually run with a real, quoted pass result"},
+    {"name": "concrete-go-ahead-description", "text": "the go-ahead description names the specific page/URL and walks through actual sections"},
+    {"name": "stopped-before-publish", "text": "the run stops after describing the change, no live action attempted"}
+  ]
+}

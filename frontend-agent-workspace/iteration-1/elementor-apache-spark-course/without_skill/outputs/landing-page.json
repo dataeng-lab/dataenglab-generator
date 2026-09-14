@@ -1,0 +1,993 @@
+{
+  "title": "Apache Spark for Beginners: DataFrames and Spark SQL - Course Landing Page",
+  "type": "page",
+  "version": "0.1",
+  "content": [
+    {
+      "id": "1000001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "flex_align_items": "stretch",
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "1000002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+            "padding": { "unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true },
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 10 },
+            "_column_size": 57
+          },
+          "elements": [
+            {
+              "id": "1000003",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Apache Spark</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "1000004",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Apache Spark for Beginners: DataFrames and Spark SQL",
+                "header_size": "h1",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "1000005",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Learn PySpark and Spark SQL by building a NorthWind Retail order-analytics pipeline that filters out broken line items, joins orders to order items, computes revenue per product category, and surfaces the top 5 products &mdash; validated end to end by an automated pytest suite.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "1000006",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Beginner</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">78 min lecture + 145 min practical</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">9 lessons &middot; 4 quizzes</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "1000007",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 10 }
+              },
+              "elements": [
+                {
+                  "id": "1000008",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Enroll Now",
+                    "link": { "url": "#", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "1000009",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Preview Curriculum",
+                    "link": { "url": "#curriculum", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#14151A",
+                    "border_color": "#E7E3D9"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1000010",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 12 }
+              },
+              "elements": [
+                {
+                  "id": "1000011",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "1000012",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "9", "header_size": "h3", "title_color": "#14151A" },
+                      "elements": []
+                    },
+                    {
+                      "id": "1000013",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": { "editor": "<span>Lessons</span>", "text_color": "#54575F" },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "1000014",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "1000015",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "4", "header_size": "h3", "title_color": "#14151A" },
+                      "elements": []
+                    },
+                    {
+                      "id": "1000016",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": { "editor": "<span>Quizzes</span>", "text_color": "#54575F" },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "1000017",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "1000018",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "1", "header_size": "h3", "title_color": "#14151A" },
+                      "elements": []
+                    },
+                    {
+                      "id": "1000019",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": { "editor": "<span>Graded practical lab</span>", "text_color": "#54575F" },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1000020",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+            "padding": { "unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true },
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 10 },
+            "_column_size": 43
+          },
+          "elements": [
+            {
+              "id": "1000021",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": { "title": "Tools you will use", "header_size": "h2", "title_color": "#14151A" },
+              "elements": []
+            },
+            {
+              "id": "1000022",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": { "editor": "<p>You will work hands-on with the same stack the NorthWind Retail data engineering team uses.</p>", "text_color": "#54575F" },
+              "elements": []
+            },
+            {
+              "id": "1000023",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Apache Spark 3.5.x</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">PySpark</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Python 3.11+</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Spark SQL</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">pytest</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">CSV/Parquet</span>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000030",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "1000031",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "1000032",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "1000033",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "What You'll Learn", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "1000034",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Skills you can put to work after nine lessons.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1000035",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "1000036",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "1000037",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Explain Spark's driver/executor/cluster-manager architecture and why it scales beyond a single machine.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000038a" },
+                      { "text": "Distinguish lazy transformations from actions and predict when a Spark job actually executes.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000038b" },
+                      { "text": "Read CSV data into a PySpark DataFrame with an explicit schema and inspect it safely.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000038c" },
+                      { "text": "Select, filter, and derive columns using the PySpark DataFrame API.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000038d" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1000039",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "1000040",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Aggregate data with groupBy/agg to answer business questions.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000041a" },
+                      { "text": "Run equivalent queries with the DataFrame API and Spark SQL, and join two DataFrames.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000041b" },
+                      { "text": "Write a small, testable PySpark job that reads input, transforms it, and writes output files.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000041c" },
+                      { "text": "Validate a Spark job's output with an automated pytest suite run in local mode.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000041d" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000050",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "1000051",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "1000052",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "1000053",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Who This Is For", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "1000054",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Make sure this course matches your starting point.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1000055",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "1000056",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "1000057",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Audience</span>" },
+                  "elements": []
+                },
+                {
+                  "id": "1000058",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Who this course is for", "header_size": "h3", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "1000059",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>Data engineering beginners who already know basic Python (variables, functions, loops) and basic SQL (SELECT, WHERE, GROUP BY), but have never used Apache Spark.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1000060",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "1000061",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Prerequisites</span>" },
+                  "elements": []
+                },
+                {
+                  "id": "1000062",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "What you need before starting", "header_size": "h3", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "1000063",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Basic Python (variables, functions, for loops, importing modules).", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000064a" },
+                      { "text": "Basic SQL (SELECT, WHERE, GROUP BY, JOIN). No prior Spark or distributed-systems experience required.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000064b" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1000065",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "1000066",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Level</span>" },
+                  "elements": []
+                },
+                {
+                  "id": "1000067",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Beginner", "header_size": "h3", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "1000068",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>No prior Spark or distributed-systems experience required &mdash; just comfort with basic Python and basic SQL.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000070",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "custom_id": "curriculum"
+      },
+      "elements": [
+        {
+          "id": "1000071",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "1000072",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "1000073",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Curriculum", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "1000074",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "4 modules, 9 lessons, 4 quizzes, and one graded practical lab.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1000075",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "Module 1: Spark Architecture and Getting Started",
+                "tab_content": "01. Why Data Engineers Use Spark &mdash; 10 min lecture<br>02. Your First PySpark Program &mdash; 8 min lecture, 10 min practical<br>Quiz: quiz-01-spark-architecture.md",
+                "_id": "1000076"
+              },
+              {
+                "tab_title": "Module 2: DataFrames: Transformations and Actions",
+                "tab_content": "03. Transformations, Actions, and Lazy Evaluation &mdash; 8 min lecture, 7 min practical<br>04. Selecting, Filtering, and Deriving Columns &mdash; 8 min lecture, 12 min practical<br>05. Grouping and Aggregating Data &mdash; 8 min lecture, 12 min practical<br>Quiz: quiz-02-dataframe-operations.md",
+                "_id": "1000077"
+              },
+              {
+                "tab_title": "Module 3: Spark SQL",
+                "tab_content": "06. Running SQL Queries on DataFrames &mdash; 8 min lecture, 10 min practical<br>07. Joining Datasets with Spark SQL and the DataFrame API &mdash; 10 min lecture, 12 min practical<br>Quiz: quiz-03-spark-sql.md",
+                "_id": "1000078"
+              },
+              {
+                "tab_title": "Module 4: Building and Validating a Spark Pipeline (Practical Lab)",
+                "tab_content": "08. Writing Output and Structuring a Spark Job &mdash; 8 min lecture, 10 min practical<br>09. Testing a PySpark Pipeline Locally &mdash; 10 min lecture, 12 min practical<br>Quiz: quiz-04-building-and-testing-pipelines.md",
+                "_id": "1000079"
+              }
+            ],
+            "title_color": "#14151A",
+            "content_color": "#54575F",
+            "border_color": "#E7E3D9",
+            "faq_schema": "yes"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "1000080",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": { "unit": "deg", "size": 160 }
+      },
+      "elements": [
+        {
+          "id": "1000081",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "1000082",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "1000083",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Practical Lab", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "1000084",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Build and validate a NorthWind Retail revenue pipeline in PySpark.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1000085",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "1000086",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 70 },
+              "elements": [
+                {
+                  "id": "1000087",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Business scenario", "header_size": "h4", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "1000088",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>NorthWind Retail, a mid-size online retailer, exports daily CSV files of orders and order line items from its e-commerce platform. The analytics team wants per-category revenue and a top-5 best-selling products report every morning, but some rows in the daily export are broken (missing unit price, zero/negative quantity, or an order_item pointing at an order_id that does not exist), and the file has grown too large to comfortably explore in a spreadsheet or plain pandas on a laptop. The data engineering team is introducing Apache Spark so the same logic will still work when the daily export grows from thousands to millions of rows.</p>", "text_color": "#54575F" },
+                  "elements": []
+                },
+                {
+                  "id": "1000089",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Deliverable", "header_size": "h4", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "1000090",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>A PySpark script (analyze_orders.py) that reads orders.csv and order_items.csv, filters out invalid line items, joins orders to their line items, computes total revenue per product category, computes the top 5 products by revenue, and writes both results to CSV files, verified by an automated pytest suite that runs Spark in local mode.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1000091",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 30, "flex_justify_content": "center" },
+              "elements": [
+                {
+                  "id": "1000092",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Start the Lab",
+                    "link": { "url": "#", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000100",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "1000101",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "1000102",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "1000103",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "What You'll Produce", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "1000104",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "A tested, runnable PySpark pipeline, not just slides.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1000105",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "1000106",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 60 },
+              "elements": [
+                {
+                  "id": "1000107",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "pytest against tests/test_analyze_orders.py exits with status 0.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000108a" },
+                      { "text": "category_revenue.csv contains exactly one row per product category with the correct summed revenue, excluding invalid line items.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000108b" },
+                      { "text": "top_products.csv contains exactly the 5 products with the highest total revenue, ordered from highest to lowest.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000108c" },
+                      { "text": "Line items with a missing/non-positive unit price, a non-positive quantity, or an order_id absent from orders.csv are excluded from every computation.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "1000108d" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "1000109",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 40
+              },
+              "elements": [
+                {
+                  "id": "1000110",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Automated validation", "header_size": "h4", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "1000111",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>Every lesson builds toward analyze_orders.py, a real PySpark script you write and run yourself. Your work is graded the same way a data engineering team would review it: an automated pytest suite that starts a local SparkSession and checks your output files.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000120",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": { "unit": "deg", "size": 160 },
+        "custom_id": "enroll"
+      },
+      "elements": [
+        {
+          "id": "1000121",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "1000122",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "1000123",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Enroll", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "1000124",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Ready to start Apache Spark for Beginners?", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "1000125",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>Go from your first SparkSession to a tested PySpark pipeline that computes NorthWind Retail's category revenue and top-5 products report, all validated automatically by pytest.</p>", "text_color": "#54575F" },
+                  "elements": []
+                },
+                {
+                  "id": "1000126",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 10 } },
+                  "elements": [
+                    {
+                      "id": "1000127",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Enroll Now",
+                        "link": { "url": "#", "is_external": "", "nofollow": "" },
+                        "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                        "background_color": "#14151A",
+                        "button_text_color": "#FFFFFF"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

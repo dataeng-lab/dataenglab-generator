@@ -7,6 +7,7 @@
       "Glob",
       "Grep",
       "Bash(python scripts/run_checks.py:*)",
+      "Bash(python scripts/run_lab_checks.py:*)",
       "Bash(python scripts/validate_course.py:*)",
       "Bash(python scripts/validate_lab.py:*)",
       "Bash(python scripts/validate_elementor_json.py:*)",
@@ -22,7 +23,9 @@
       "Bash(ssh:*)",
       "Bash(scp:*)",
       "Bash(ftp:*)",
-      "Bash(wp:*)"
+      "Bash(wp:*)",
+      "Read(./.venv)",
+      "Read(./.venv/**)"
     ]
   }
 }

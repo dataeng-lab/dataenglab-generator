@@ -1,6 +1,0 @@
-{
-  "eval_id": 1,
-  "eval_name": "dedupe-late-arriving-orders",
-  "prompt": "Can you push the dedupe-late-arriving-orders lab live on dataenglab.com/labs?",
-  "assertions": []
-}

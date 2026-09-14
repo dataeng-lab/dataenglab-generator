@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "skill_name": "lab-design",
+    "skill_path": ".claude/skills/lab-design/SKILL.md",
+    "executor_model": "claude-sonnet-5",
+    "analyzer_model": "claude-sonnet-5",
+    "timestamp": "2026-09-14T18:00:00Z",
+    "evals_run": [0, 1],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {"eval_id": 0, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 7, "failed": 0, "total": 7, "time_seconds": 67.3, "tokens": 125795, "tool_calls": 4, "errors": 0}, "notes": ["Timing/tokens cover only the post-rate-limit-resume continuation, not the full run - not directly comparable to an uninterrupted run's timing."]},
+    {"eval_id": 0, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 7, "failed": 0, "total": 7, "time_seconds": 62.0, "tokens": 126488, "tool_calls": 7, "errors": 0}, "notes": ["Timing/tokens cover only the post-rate-limit-resume continuation.", "Built a richer edge-case set (5 distinct trap types vs 3) on this task."]},
+    {"eval_id": 1, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 7, "failed": 0, "total": 7, "time_seconds": 174.8, "tokens": 146203, "tool_calls": 8, "errors": 0}, "notes": ["Timing/tokens cover only the post-rate-limit-resume continuation."]},
+    {"eval_id": 1, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 7, "failed": 0, "total": 7, "time_seconds": 131.7, "tokens": 129123, "tool_calls": 10, "errors": 0}, "notes": ["Timing/tokens cover only the post-rate-limit-resume continuation."]}
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0},
+      "time_seconds": {"mean": 121.05, "stddev": 76.1, "min": 67.3, "max": 174.8},
+      "tokens": {"mean": 135999.0, "stddev": 14416.0, "min": 125795, "max": 146203}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0},
+      "time_seconds": {"mean": 96.85, "stddev": 49.4, "min": 62.0, "max": 131.7},
+      "tokens": {"mean": 127805.5, "stddev": 1863.0, "min": 126488, "max": 129123}
+    },
+    "delta": {"pass_rate": "+0.00", "time_seconds": "+24.2", "tokens": "+8194"}
+  },
+  "notes": [
+    "ALL FOUR of these runs were interrupted by a session rate limit and resumed rather than restarted, so every time_seconds/tokens figure here covers only the resumed continuation, not the full run. Do not trust the time/tokens delta for this skill's comparison — only the pass_rate delta (which reflects the complete, correctness-relevant work regardless of the interruption) is reliable here.",
+    "Quality outcome was identical (100% pass rate both ways) on both evals: required files present, README/validate.json commands matched exactly, no solution leaks, deterministic datasets with real edge cases, and the checker was actually run against both the instructor solution (pass) and the unmodified starter (fail) in every run.",
+    "The main qualitative difference observed was scenario richness (edge-case count), which varied per-run more than per-configuration — not a strong with/without-skill signal on this evidence."
+  ]
+}

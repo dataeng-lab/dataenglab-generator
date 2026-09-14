@@ -1,0 +1,34 @@
+{
+  "skill_name": "course-design",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "new-course-pandas-cleaning",
+      "prompt": "Create a new, small, complete DataEngLab course teaching pandas null-handling and deduplication basics for beginners (~90 minutes total, at least 50% practical, one practical lab).",
+      "assertions": [
+        {"name": "course-spec-valid", "text": "course-spec.json exists, parses as JSON, and has all required fields (title, slug, audience, level, prerequisites, outcomes, technologies, business_scenario, deliverable, validation_criteria, acquired_skills, duration_minutes, curriculum)"},
+        {"name": "slug-matches-dir", "text": "course-spec.json's slug matches the output directory name"},
+        {"name": "practical-time-50pct", "text": "duration_minutes.practical / (lecture+practical) is at least 0.5"},
+        {"name": "lessons-full-headings", "text": "every lesson file under tutor-lms/lessons/ contains all 10 required ## headings (Learning objective, Prerequisites, Concept, Architecture or data flow, Practical example, Common mistakes, Mini exercise, Expected result, Summary, Next step) non-empty"},
+        {"name": "quizzes-well-formed", "text": "every quiz file has Type, Difficulty, Related lesson, Question, at least two Options with unique letters, a Correct answer matching an option, and an Explanation"},
+        {"name": "instructor-separation", "text": "no solution code, answer keys, or instructor-only content exists anywhere under student-lab/"},
+        {"name": "lab-execution-actually-run", "text": "the summary reports a real command invocation (not just a description) of a lab-execution validator, with real pass/fail output quoted"},
+        {"name": "review-actually-run", "text": "course-reviewer subagent was actually invoked (not skipped/assumed) and review-report.md exists with a PASS or FAIL verdict"},
+        {"name": "elementor-exclusive-outcome", "text": "exactly one of elementor/landing-page.json or elementor/REFERENCE_REQUIRED.md exists, not both and not neither; if landing-page.json, SOURCE.md also exists"},
+        {"name": "no-fabrication", "text": "no fake statistics, testimonials, or unverifiable claims appear in generated content"}
+      ]
+    },
+    {
+      "id": 1,
+      "eval_name": "update-course-add-quiz-question",
+      "prompt": "Add one more quiz question about partition pruning to an existing DataEngLab course (isolated copy of apache-spark-for-beginners), as an update rather than a fresh generation.",
+      "assertions": [
+        {"name": "original-untouched", "text": "the original output/apache-spark-for-beginners/ directory was not modified"},
+        {"name": "new-question-well-formed", "text": "the new quiz question follows the repo's field format (Type, Difficulty, Related lesson, Question, Options with unique letters, Correct answer matching an option, Explanation)"},
+        {"name": "related-lesson-real", "text": "the new question's Related lesson references a lesson ID that actually exists in the copied course"},
+        {"name": "topically-correct", "text": "the question and explanation are substantively about partition pruning, not a generic/unrelated question"},
+        {"name": "validation-actually-run", "text": "a real validation command was run against the change and its real result is quoted"}
+      ]
+    }
+  ]
+}

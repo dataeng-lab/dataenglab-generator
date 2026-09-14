@@ -1,0 +1,89 @@
+{
+  "title": "Pandas Data Cleaning Basics: Nulls and Duplicates",
+  "slug": "pandas-data-cleaning-basics-eval-bl",
+  "audience": "Complete beginners to data engineering who know basic Python (variables, functions, lists, for loops) but have little or no prior experience with pandas.",
+  "level": "beginner",
+  "prerequisites": [
+    "Basic Python (variables, functions, for loops, running a .py script).",
+    "Comfort opening and reading a CSV file in a text editor or spreadsheet.",
+    "No prior pandas or data engineering experience required."
+  ],
+  "outcomes": [
+    "Explain why missing values and duplicate rows silently break downstream analysis.",
+    "Detect missing values in a pandas DataFrame with isna()/isnull() and summarize them per column.",
+    "Decide, per column, whether to drop or fill a missing value, and apply that decision with dropna() and fillna().",
+    "Detect exact and key-based duplicate rows with duplicated() and understand the keep parameter.",
+    "Remove duplicate rows deterministically with drop_duplicates(), choosing which occurrence to keep.",
+    "Combine null-handling and deduplication into one small, readable, testable cleaning script.",
+    "Validate a cleaning script's output against expected row counts and values with pytest."
+  ],
+  "technologies": [
+    "Python 3.11+",
+    "pandas 2.x",
+    "pytest",
+    "CSV"
+  ],
+  "business_scenario": "GreenLeaf Analytics runs a customer feedback form for a small retail chain. The raw daily export, customer_feedback_raw.csv, comes straight from the form backend and is messy: some customers left the rating field blank, some entries are missing the email address needed to identify the customer, some optional fields (comments, region) are blank, and a number of customers accidentally submitted the form twice for the same date (sometimes an exact repeat, sometimes a corrected second answer). Before the weekly satisfaction report can be trusted, this raw export must be cleaned: rows missing required fields must be removed, optional blanks must be filled with a clear placeholder instead of staying null, and duplicate submissions for the same customer and date must be collapsed down to a single, most-recent row.",
+  "deliverable": "A Python script (clean_customer_feedback.py) that reads student-lab/datasets/customer_feedback_raw.csv, drops rows missing a required field (customer_email or rating), fills optional blanks (comments, region) with clear placeholder text, deduplicates repeat submissions per (customer_email, survey_date) by keeping the last occurrence, and writes the result to output/clean_feedback.csv, verified by an automated pytest suite.",
+  "validation_criteria": [
+    "pytest against tests/test_clean_customer_feedback.py exits with status 0.",
+    "Rows with a missing customer_email or a missing rating are absent from clean_feedback.csv.",
+    "clean_feedback.csv has no null/NaN values in any column.",
+    "For every (customer_email, survey_date) pair that appeared more than once in the raw file, only the last occurrence (by submission_id order) survives in clean_feedback.csv.",
+    "clean_feedback.csv contains exactly 12 rows."
+  ],
+  "acquired_skills": [
+    "Inspecting a DataFrame for missing values with isna()/isnull() and .sum().",
+    "Choosing between dropna() and fillna() per column based on whether a field is required or optional.",
+    "Detecting duplicate rows with duplicated() and understanding first/last/False keep semantics.",
+    "Removing duplicate rows deterministically with drop_duplicates(subset=..., keep=...).",
+    "Structuring a small, readable pandas cleaning script as testable functions instead of one long block.",
+    "Writing pytest tests that assert on DataFrame shape, null counts, and specific row survival."
+  ],
+  "duration_minutes": {
+    "lecture": 34,
+    "practical": 56
+  },
+  "curriculum": [
+    {
+      "topic": "Understanding and Handling Missing Data",
+      "lessons": [
+        {
+          "id": "01-why-nulls-and-duplicates-break-analysis",
+          "title": "Why Nulls and Duplicates Break Analysis",
+          "objective": "Explain how unnoticed missing values and duplicate rows silently distort counts, averages, and downstream reports.",
+          "minutes_lecture": 12,
+          "minutes_practical": 3
+        },
+        {
+          "id": "02-finding-and-handling-missing-values",
+          "title": "Finding and Handling Missing Values with pandas",
+          "objective": "Detect missing values with isna() and apply dropna() or fillna() based on whether a column is required or optional.",
+          "minutes_lecture": 8,
+          "minutes_practical": 15
+        }
+      ],
+      "quiz": "quiz-01-missing-data.md"
+    },
+    {
+      "topic": "Deduplicating and Shipping Clean Data",
+      "lessons": [
+        {
+          "id": "03-finding-and-removing-duplicate-rows",
+          "title": "Finding and Removing Duplicate Rows with pandas",
+          "objective": "Detect duplicate rows with duplicated() and remove them deterministically with drop_duplicates(), choosing which occurrence to keep.",
+          "minutes_lecture": 8,
+          "minutes_practical": 15
+        },
+        {
+          "id": "04-building-a-clean-data-pipeline",
+          "title": "Building a Clean, Validated Data-Cleaning Pipeline",
+          "objective": "Combine null-handling and deduplication into one small pipeline script and validate its output with pytest.",
+          "minutes_lecture": 6,
+          "minutes_practical": 23
+        }
+      ],
+      "quiz": "quiz-02-duplicates-and-pipeline.md"
+    }
+  ]
+}

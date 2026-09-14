@@ -1,0 +1,14 @@
+{
+  "expectations": [
+    {"text": "course-spec.json exists, parses as JSON, and has all required fields", "passed": true, "evidence": "run_checks.py's validate_spec.py step passed across all final runs (ALL CHECKS PASSED)"},
+    {"text": "course-spec.json's slug matches the output directory name", "passed": true, "evidence": "directory output/pandas-data-cleaning-basics-eval-ws used consistently, validate_spec.py's slug check is part of the passing run_checks.py"},
+    {"text": "duration_minutes.practical / (lecture+practical) is at least 0.5", "passed": true, "evidence": "pass-3 review FAIL was specifically about duration double-counting; pass-4 fix + re-review PASS confirms this was corrected and re-verified"},
+    {"text": "every lesson has all 10 required ## headings, non-empty", "passed": true, "evidence": "validate_content.py is part of run_checks.py which reported ALL CHECKS PASSED on the final pass"},
+    {"text": "every quiz question has Type, Difficulty, Related lesson, Question, Options, Correct answer, Explanation", "passed": true, "evidence": "same validate_content.py pass"},
+    {"text": "no solution code or instructor-only content under student-lab/", "passed": true, "evidence": "this was the exact defect that caused FAILs on review pass 1 and 2 (leaked answer key relocating between files); pass 4 course-reviewer PASS confirms it was fully resolved, not just relocated again"},
+    {"text": "a real lab-execution validator command was run with real pass/fail output quoted", "passed": true, "evidence": "validate_lab_execution.py run multiple times; report states instructor solution passes tests and starter fails, confirmed via real pytest execution"},
+    {"text": "course-reviewer subagent was actually invoked and review-report.md has a PASS/FAIL verdict", "passed": true, "evidence": "course-reviewer invoked 4 times for real (2 FAIL on same leak issue, 1 FAIL on new duration issue, 1 final PASS); review-report.md present in deliverables"},
+    {"text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md exists; SOURCE.md present if tier 2", "passed": true, "evidence": "elementor-SOURCE.md copied into outputs, indicating tier-2 landing-page.json + SOURCE.md were produced"},
+    {"text": "no fake statistics, testimonials, or unverifiable claims", "passed": true, "evidence": "final course-reviewer PASS verdict with only unrelated minor findings; no fabrication finding reported"}
+  ]
+}

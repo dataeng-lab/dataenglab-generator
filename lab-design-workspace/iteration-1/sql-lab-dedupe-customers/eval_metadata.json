@@ -1,0 +1,14 @@
+{
+  "eval_id": 0,
+  "eval_name": "sql-lab-dedupe-customers",
+  "prompt": "Build a new standalone DataEngLab lab where students find and fix duplicate customer records in a small deterministic SQLite dataset, using SQL.",
+  "assertions": [
+    {"name": "required-files-present", "text": "lab-spec.md, page-content.md, root validate.json, student-lab/README.md all exist and are non-empty"},
+    {"name": "readme-matches-validate-json", "text": "README's Validation section commands match validate.json's argv arrays exactly"},
+    {"name": "instructor-not-leaked", "text": "no working solution code or answer keys exist anywhere under student-lab/"},
+    {"name": "solution-matches-starter-paths", "text": "every file under instructor/solution/ has a matching relative path under student-lab/starter/"},
+    {"name": "dataset-deterministic-with-edge-cases", "text": "the dataset is fixed/deterministic and visibly contains duplicate-customer edge cases"},
+    {"name": "validation-actually-run-and-passed", "text": "a real invocation of the lab checker against the instructor solution is reported, with real output showing a pass"},
+    {"name": "starter-expected-to-fail", "text": "unmodified starter files are shown/described to fail validation"}
+  ]
+}

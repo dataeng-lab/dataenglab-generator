@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "the original output/test-course/ directory was not modified", "passed": true, "evidence": "confirmed untouched; did not touch the -fe-ws copy either"},
+    {"text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md was produced", "passed": true, "evidence": "landing-page.json produced (7 sections, 78 elements)"},
+    {"text": "the tier decision was made fresh rather than blindly copying test-course's prior REFERENCE_REQUIRED.md verdict", "passed": true, "evidence": "independently checked tier 1 absence and tier 2 corpus validity, arrived at tier 2 fresh"},
+    {"text": "validate_elementor_json.py was actually run with a real, quoted pass/fail result", "passed": true, "evidence": "OK: output\\test-course-fe-bl\\elementor\\landing-page.json, exit 0"},
+    {"text": "no html/shortcode widgets and no <style>/<script> tags in settings", "passed": true, "evidence": "validator passed, which hard-fails on these"},
+    {"text": "hardcoded colors are from the live theme tokens, not the retired #3D73FF blue", "passed": false, "evidence": "SOURCE.md explicitly states it flagged a discrepancy: 'CLAUDE.md's brand section lists #3D73FF primary, but the actual tier-2 corpus documents and uses #5A4FE5' -- this is a hallucinated claim about CLAUDE.md's current content: CLAUDE.md was independently verified this session to contain no Brand section and no mention of #3D73FF at all (it was trimmed to a short overview during an earlier concurrent restructuring). The final color choice (#5A4FE5) was correct, but the stated reasoning misdescribes a source file the agent was told to treat as authoritative."}
+  ],
+  "notes": "Same real hallucination pattern appeared independently in the course-design without_skill run's SOURCE.md note. Worth investigating whether some stale/cached CLAUDE.md content or a misleading phrase elsewhere (e.g. frontend-agent memory.md's own '#3D73FF is not the Elementor primary color' aside) is causing agents to misattribute that fact to CLAUDE.md itself without checking it directly."
+}

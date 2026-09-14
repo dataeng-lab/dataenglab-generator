@@ -1,0 +1,33 @@
+{
+  "skill_name": "lab-design",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "sql-lab-dedupe-customers",
+      "prompt": "Build a new standalone DataEngLab lab where students find and fix duplicate customer records in a small deterministic SQLite dataset, using SQL.",
+      "assertions": [
+        {"name": "required-files-present", "text": "lab-spec.md, page-content.md, root validate.json, student-lab/README.md all exist and are non-empty"},
+        {"name": "readme-matches-validate-json", "text": "the commands documented under student-lab/README.md's Validation section match validate.json's argv arrays exactly"},
+        {"name": "instructor-not-leaked", "text": "no working solution code or answer keys exist anywhere under student-lab/ (only student-lab/starter/ placeholders like solution.sql are allowed, and only as incomplete placeholders)"},
+        {"name": "solution-matches-starter-paths", "text": "every file under instructor/solution/ has a matching relative path under student-lab/starter/"},
+        {"name": "dataset-deterministic-with-edge-cases", "text": "the dataset is fixed/deterministic (not randomly generated at run time) and visibly contains duplicate-customer edge cases the tasks reference"},
+        {"name": "validation-actually-run-and-passed", "text": "the summary reports a real invocation of the lab checker/validator against the instructor solution, with real output showing a pass"},
+        {"name": "starter-expected-to-fail", "text": "the report acknowledges (or evidence shows) that the unmodified starter files fail validation, confirming the test is non-trivial"}
+      ]
+    },
+    {
+      "id": 1,
+      "eval_name": "python-lab-validate-event-order",
+      "prompt": "Build a new standalone DataEngLab lab about detecting and handling out-of-order event timestamps in a CSV file, using Python.",
+      "assertions": [
+        {"name": "required-files-present", "text": "lab-spec.md, page-content.md, root validate.json, student-lab/README.md all exist and are non-empty"},
+        {"name": "readme-matches-validate-json", "text": "the commands documented under student-lab/README.md's Validation section match validate.json's argv arrays exactly"},
+        {"name": "instructor-not-leaked", "text": "no working solution code or answer keys exist anywhere under student-lab/"},
+        {"name": "solution-matches-starter-paths", "text": "every file under instructor/solution/ has a matching relative path under student-lab/starter/"},
+        {"name": "dataset-deterministic-with-edge-cases", "text": "the CSV dataset is fixed/deterministic and visibly contains out-of-order timestamp edge cases the tasks reference"},
+        {"name": "validation-actually-run-and-passed", "text": "the summary reports a real invocation of the lab checker/validator against the instructor solution, with real output showing a pass"},
+        {"name": "tests-exit-nonzero-on-failure", "text": "the test suite is shown/described to fail (non-zero exit) against unmodified starter files"}
+      ]
+    }
+  ]
+}

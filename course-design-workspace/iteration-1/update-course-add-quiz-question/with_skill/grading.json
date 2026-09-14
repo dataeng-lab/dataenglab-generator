@@ -1,0 +1,9 @@
+{
+  "expectations": [
+    {"text": "the original output/apache-spark-for-beginners/ directory was not modified", "passed": true, "evidence": "agent confirmed via git status --porcelain that the original shows no per-file diffs"},
+    {"text": "the new quiz question follows the repo's field format with unique option letters and a correct answer matching an option", "passed": true, "evidence": "Question 5 quoted verbatim with Type/Difficulty/Related lesson/Question/Options A-D/Correct answer B/Explanation, matching sibling question format"},
+    {"text": "the new question's Related lesson references a lesson ID that actually exists in the copied course", "passed": true, "evidence": "tied to 06-running-sql-queries-on-dataframes after grepping the course for the closest matching real lesson; also synced curriculum.md's question count"},
+    {"text": "the question and explanation are substantively about partition pruning", "passed": true, "evidence": "question and explanation describe disk-partition scan-skipping correctly and distinguish it from in-memory processing partitions"},
+    {"text": "a real validation command was run against the change and its real result is quoted", "passed": true, "evidence": "python scripts/run_checks.py output/apache-spark-for-beginners-eval-ws -> ALL CHECKS PASSED, with validate_lab_execution.py actually overlaying the solution and running pytest"}
+  ]
+}

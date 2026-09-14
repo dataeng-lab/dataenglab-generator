@@ -1,0 +1,8 @@
+{
+  "setup": [
+    ["python", "build_dataset.py"]
+  ],
+  "validate": [
+    ["python", "tests/test_solution.py"]
+  ]
+}

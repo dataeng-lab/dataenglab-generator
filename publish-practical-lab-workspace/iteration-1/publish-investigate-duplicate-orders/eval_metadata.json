@@ -1,0 +1,13 @@
+{
+  "eval_id": 0,
+  "eval_name": "publish-investigate-duplicate-orders",
+  "prompt": "Publish the investigate-duplicate-orders lab to dataenglab.com/labs/investigate-duplicate-orders (isolated copy; run must stop before any real publish action).",
+  "assertions": [
+    {"name": "no-live-tool-called", "text": "CRITICAL: no Novamira/browser-automation/live-site tool was actually called"},
+    {"name": "original-untouched", "text": "the original output/investigate-duplicate-orders/ directory was not modified"},
+    {"name": "labs-page-produced-and-valid", "text": "labs-page.json produced and validate_elementor_json.py actually run with a real, quoted pass result"},
+    {"name": "source-md-present", "text": "SOURCE.md names the tier, source files, and restates the unverified-draft caveat"},
+    {"name": "concrete-go-ahead-description", "text": "the go-ahead description names the specific page/URL and walks through actual sections"},
+    {"name": "stopped-before-publish", "text": "the run stops after describing the change, no live action attempted"}
+  ]
+}

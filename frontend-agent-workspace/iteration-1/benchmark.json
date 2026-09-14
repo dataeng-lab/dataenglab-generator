@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "skill_name": "frontend-agent",
+    "skill_path": ".claude/skills/frontend-agent/SKILL.md",
+    "executor_model": "claude-sonnet-5",
+    "analyzer_model": "claude-sonnet-5",
+    "timestamp": "2026-09-14T18:00:00Z",
+    "evals_run": [0, 1],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {"eval_id": 0, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 9, "failed": 0, "total": 9, "time_seconds": 245.9, "tokens": 91302, "tool_calls": 22, "errors": 0}, "notes": []},
+    {"eval_id": 0, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 9, "failed": 0, "total": 9, "time_seconds": 229.5, "tokens": 125410, "tool_calls": 22, "errors": 0}, "notes": ["Reused the original apache-spark-for-beginners landing-page.json verbatim instead of generating fresh, since the copied course's content was identical - a shortcut that technically satisfied every assertion but exercised less real generation than the with_skill run."]},
+    {"eval_id": 1, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 6, "failed": 0, "total": 6, "time_seconds": 317.1, "tokens": 121630, "tool_calls": 21, "errors": 0}, "notes": ["Correctly overrode a stale REFERENCE_REQUIRED.md verdict already sitting in the real test-course output by re-deriving the tier decision fresh."]},
+    {"eval_id": 1, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 0.8333, "passed": 5, "failed": 1, "total": 6, "time_seconds": 327.8, "tokens": 113617, "tool_calls": 26, "errors": 0}, "notes": ["Also correctly overrode the stale REFERENCE_REQUIRED.md verdict fresh (good).", "FAILED one assertion: its SOURCE.md justified the palette choice by claiming 'CLAUDE.md's brand section lists #3D73FF primary' - CLAUDE.md contains no such section and no mention of #3D73FF. The final color chosen (#5A4FE5) was correct, but the stated reasoning fabricated a claim about a source file it was told to treat as authoritative."]}
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0},
+      "time_seconds": {"mean": 281.5, "stddev": 50.3, "min": 245.9, "max": 317.1},
+      "tokens": {"mean": 106466.0, "stddev": 21454.0, "min": 91302, "max": 121630}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 0.9167, "stddev": 0.1179, "min": 0.8333, "max": 1.0},
+      "time_seconds": {"mean": 278.65, "stddev": 69.4, "min": 229.5, "max": 327.8},
+      "tokens": {"mean": 119513.5, "stddev": 8341.0, "min": 113617, "max": 125410}
+    },
+    "delta": {"pass_rate": "+0.08", "time_seconds": "+2.9", "tokens": "-13048"}
+  },
+  "notes": [
+    "The one real quality gap found anywhere in this whole 16-run eval is here: the without_skill run on eval 1 (elementor-test-course) hallucinated a claim about CLAUDE.md's own content (asserting a '#3D73FF Brand section' that does not exist) inside its SOURCE.md disclosure, even though the actual color it picked was correct.",
+    "A near-identical hallucination ('CLAUDE.md's brand section lists #3D73FF') independently appeared in the course-design without_skill run's SOURCE.md for a different eval entirely - this looks like a real, reproducible failure mode where agents assume a well-known old fact about this project (the retired blue palette) is still written in CLAUDE.md without actually checking, rather than something specific to frontend-agent. Both instances happened in without_skill runs; neither with_skill run made this mistake, plausibly because frontend-agent/memory.md's own phrasing ('The old brand blue #3D73FF is not the Elementor primary color') already states the conclusion correctly without inviting the agent to re-derive or attribute it to a specific CLAUDE.md section.",
+    "Both without_skill runs showed a tendency toward shortcuts under time/token pressure: one reused an existing file verbatim rather than regenerating, the other fabricated a source citation rather than leaving the justification generic. Neither behavior appeared in either with_skill run.",
+    "Both configurations correctly overrode a stale, pre-existing REFERENCE_REQUIRED.md verdict in the real output/test-course/ by re-deriving the tier decision fresh rather than trusting old cached state - this is a good sign for both, though marginally better instructed by frontend-agent/SKILL.md's explicit 'Check again every run' guidance."
+  ]
+}

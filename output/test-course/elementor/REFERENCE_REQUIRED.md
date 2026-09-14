@@ -2,9 +2,9 @@
 
 ## Why this file exists despite the rule against it
 
-`CLAUDE.md` states: *"If the reference is missing or invalid, do not fabricate `landing-page.json`... create `elementor/REFERENCE_REQUIRED.md`."* `references/elementor-reference.json` is still missing from this kit (only `references/brand.md` and `references/README.md` exist) — that has not changed.
+`CLAUDE.md` states: *"If the reference is missing or invalid, do not fabricate `landing-page.json`... create `elementor/REFERENCE_REQUIRED.md`."* Root `elementor-reference.json` is still missing from this kit — that has not changed.
 
-`elementor/landing-page.json` was generated anyway, at the user's explicit request, as a **best-effort draft** rather than reused from a real export. This is a deliberate, scoped, one-time override of the CLAUDE.md rule for this course only — it does **not** change the standing policy, and `references/elementor-reference.json` was not fabricated or added to `references/`. Future course generations in this kit will still correctly refuse to fabricate Elementor JSON until a real reference is supplied.
+`elementor/landing-page.json` was generated anyway, at the user's explicit request, as a **best-effort draft** rather than reused from a real export. This is a deliberate, scoped, one-time override of the CLAUDE.md rule for this course only — it does **not** change the standing policy, and root `elementor-reference.json` was not fabricated. Future course generations in this kit will still correctly refuse to fabricate Elementor JSON until a real reference is supplied.
 
 ## What this means concretely
 
@@ -21,10 +21,10 @@ A single-page layout, no header/logo/menu/footer, using only native Elementor fr
 3. An `accordion` listing the 3 lessons + the lab, mirroring `tutor-lms/curriculum.md`.
 4. A closing CTA — "Start the Course" button (`href="#"`).
 
-Colors used are exactly the brand palette from `references/brand.md`. All links are `#` placeholders per CLAUDE.md's rule for unknown links.
+Colors use the project theme palette documented in `CLAUDE.md` and `elementor/README.md`. All links are `#` placeholders per CLAUDE.md's rule for unknown links.
 
 ## Before publishing this page
 
 1. Import it into a staging Elementor site and check every widget renders and every setting is respected — do not trust it sight-unseen.
 2. Fix any settings Elementor rejects or silently ignores.
-3. Once you have a real `references/elementor-reference.json`, regenerate this page from that reference instead and discard this draft — the real export is still the only trustworthy source of truth for your specific Elementor version's schema.
+3. Once you have a real root `elementor-reference.json`, regenerate this page from that reference instead and discard this draft — the real export is still the only trustworthy source of truth for your specific Elementor version's schema.

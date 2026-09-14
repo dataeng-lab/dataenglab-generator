@@ -1,0 +1,13 @@
+{
+  "eval_id": 1,
+  "eval_name": "elementor-test-course",
+  "prompt": "Generate the Elementor landing page for an isolated copy of the existing test-course.",
+  "assertions": [
+    {"name": "original-untouched", "text": "the original output/test-course/ directory was not modified"},
+    {"name": "exclusive-outcome", "text": "exactly one of landing-page.json or REFERENCE_REQUIRED.md was produced"},
+    {"name": "fresh-tier-judgment", "text": "the tier decision was made fresh rather than blindly copying test-course's prior REFERENCE_REQUIRED.md verdict"},
+    {"name": "validator-actually-run", "text": "validate_elementor_json.py was actually run with a real, quoted pass/fail result"},
+    {"name": "no-banned-widgets", "text": "no html/shortcode widgets and no <style>/<script> tags in settings"},
+    {"name": "correct-palette", "text": "hardcoded colors are from the live theme tokens, not the retired #3D73FF blue"}
+  ]
+}

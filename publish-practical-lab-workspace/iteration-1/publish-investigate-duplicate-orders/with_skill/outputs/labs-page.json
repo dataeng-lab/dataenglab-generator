@@ -1,0 +1,970 @@
+{
+  "title": "DataEng Lab - Investigate Duplicate Orders",
+  "type": "page",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "f539e76",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "ab71202",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0E9C8B;border:1px solid #E0F4F1;\">Free</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">SQL</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFEAE2;color:#FF5A36;border:1px solid #FFEAE2;\">Beginner</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FBEED9;color:#D98F1B;border:1px solid #FBEED9;\">25 min</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0E9C8B;border:1px solid #E0F4F1;\">5 Tasks</span>"
+          },
+          "elements": []
+        },
+        {
+          "id": "dff2c51",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Investigate Duplicate Orders",
+            "header_size": "h1",
+            "title_color": "#14151A"
+          },
+          "elements": []
+        },
+        {
+          "id": "dac1795",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>A revenue dashboard is double-counting sales. Finance noticed the dashboard's total doesn't match the payment processor, and a few order IDs show up more than once in exports. You've been asked to trace the issue and hand back a query the dashboard team can trust.</p>",
+            "text_color": "#54575F"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "fa4c881",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "f70bd9a",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "What you'll learn",
+            "header_size": "h2",
+            "title_color": "#14151A"
+          },
+          "elements": []
+        },
+        {
+          "id": "aa29413",
+          "elType": "widget",
+          "widgetType": "icon-list",
+          "settings": {
+            "icon_list": [
+              {
+                "text": "Determine a table's actual grain from its data, not from its name",
+                "selected_icon": {
+                  "value": "fas fa-check",
+                  "library": "fa-solid"
+                },
+                "_id": "d49b287"
+              },
+              {
+                "text": "Explain how joining tables at mismatched grains fans out rows and inflates totals",
+                "selected_icon": {
+                  "value": "fas fa-check",
+                  "library": "fa-solid"
+                },
+                "_id": "80a06d6"
+              },
+              {
+                "text": "Deduplicate late-arriving records deterministically with ROW_NUMBER(), including NULLs and exact ties",
+                "selected_icon": {
+                  "value": "fas fa-check",
+                  "library": "fa-solid"
+                },
+                "_id": "8cc2a15"
+              },
+              {
+                "text": "Aggregate to the correct grain before joining instead of joining raw and hoping GROUP BY fixes it",
+                "selected_icon": {
+                  "value": "fas fa-check",
+                  "library": "fa-solid"
+                },
+                "_id": "82193b5"
+              },
+              {
+                "text": "Surface a data-quality flag instead of letting SUM() silently drop a NULL value",
+                "selected_icon": {
+                  "value": "fas fa-check",
+                  "library": "fa-solid"
+                },
+                "_id": "f99c1aa"
+              }
+            ],
+            "icon_color": "#0E9C8B",
+            "text_color": "#14151A"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "915500f",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "ca794cb",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Environment",
+            "header_size": "h2",
+            "title_color": "#14151A"
+          },
+          "elements": []
+        },
+        {
+          "id": "b9a2e94",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_align_items": "stretch",
+            "flex_gap": {
+              "unit": "px",
+              "size": 24
+            }
+          },
+          "elements": [
+            {
+              "id": "e8b98b2",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "_column_size": 50,
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "fd74dc7",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "orders — grain: 1 row per status update",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "d78a903",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>An append-only, event-sourced fact table: a new row is written every time an order's status changes, so the table holds one row per status update, not one row per order. <code>order_id</code> is the business/natural key and repeats across versions; <code>event_id</code> is the surrogate primary key for each version row.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "fce8dc4",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<table style=\"width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px;\"><colgroup><col style=\"width:26%;\"><col style=\"width:18%;\"><col style=\"width:56%;\"></colgroup><tr style=\"border-bottom:1px solid #E7E3D9;\"><th style=\"text-align:left;padding:8px;color:#54575F;\">Field</th><th style=\"text-align:left;padding:8px;color:#54575F;\">Type</th><th style=\"text-align:left;padding:8px;color:#54575F;\">Description</th></tr><tr style=\"border-bottom:1px solid #E7E3D9;background:#FBFBF8;\"><td style=\"padding:8px;word-wrap:break-word;\">event_id</td><td style=\"padding:8px;word-wrap:break-word;\">integer</td><td style=\"padding:8px;word-wrap:break-word;\">Surrogate primary key for this version row</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;\"><td style=\"padding:8px;word-wrap:break-word;\">order_id</td><td style=\"padding:8px;word-wrap:break-word;\">text</td><td style=\"padding:8px;word-wrap:break-word;\">The order's business/natural key — repeats across versions</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;background:#FBFBF8;\"><td style=\"padding:8px;word-wrap:break-word;\">customer_id</td><td style=\"padding:8px;word-wrap:break-word;\">text</td><td style=\"padding:8px;word-wrap:break-word;\">NULL for guest checkouts</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;\"><td style=\"padding:8px;word-wrap:break-word;\">status</td><td style=\"padding:8px;word-wrap:break-word;\">text</td><td style=\"padding:8px;word-wrap:break-word;\">created / paid / refunded / cancelled</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;background:#FBFBF8;\"><td style=\"padding:8px;word-wrap:break-word;\">order_ts</td><td style=\"padding:8px;word-wrap:break-word;\">timestamp</td><td style=\"padding:8px;word-wrap:break-word;\">When the order was first created</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;\"><td style=\"padding:8px;word-wrap:break-word;\">updated_at</td><td style=\"padding:8px;word-wrap:break-word;\">timestamp</td><td style=\"padding:8px;word-wrap:break-word;\">When this version row was written; NULL on the very first event</td></tr><tr style=\"background:#FBFBF8;\"><td style=\"padding:8px;word-wrap:break-word;\">order_version</td><td style=\"padding:8px;word-wrap:break-word;\">integer</td><td style=\"padding:8px;word-wrap:break-word;\">Increases every time a new row is appended for this order</td></tr></table>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "957d830",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "_column_size": 50,
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                }
+              },
+              "elements": [
+                {
+                  "id": "f44e366",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "order_items — grain: 1 row per line item",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c9d6374",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>A line-item-grain fact table — the correct child grain for joining to an order-grain parent. One row per line item per order is expected and correct; several rows per order_id here are not a bug.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ee53473",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<table style=\"width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px;\"><colgroup><col style=\"width:26%;\"><col style=\"width:18%;\"><col style=\"width:56%;\"></colgroup><tr style=\"border-bottom:1px solid #E7E3D9;\"><th style=\"text-align:left;padding:8px;color:#54575F;\">Field</th><th style=\"text-align:left;padding:8px;color:#54575F;\">Type</th><th style=\"text-align:left;padding:8px;color:#54575F;\">Description</th></tr><tr style=\"border-bottom:1px solid #E7E3D9;background:#FBFBF8;\"><td style=\"padding:8px;word-wrap:break-word;\">order_item_id</td><td style=\"padding:8px;word-wrap:break-word;\">text</td><td style=\"padding:8px;word-wrap:break-word;\">Primary key</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;\"><td style=\"padding:8px;word-wrap:break-word;\">order_id</td><td style=\"padding:8px;word-wrap:break-word;\">text</td><td style=\"padding:8px;word-wrap:break-word;\">Foreign key → orders.order_id</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;background:#FBFBF8;\"><td style=\"padding:8px;word-wrap:break-word;\">sku</td><td style=\"padding:8px;word-wrap:break-word;\">text</td><td style=\"padding:8px;word-wrap:break-word;\">Product SKU</td></tr><tr style=\"border-bottom:1px solid #E7E3D9;\"><td style=\"padding:8px;word-wrap:break-word;\">quantity</td><td style=\"padding:8px;word-wrap:break-word;\">integer</td><td style=\"padding:8px;word-wrap:break-word;\">Units ordered</td></tr><tr style=\"background:#FBFBF8;\"><td style=\"padding:8px;word-wrap:break-word;\">unit_price</td><td style=\"padding:8px;word-wrap:break-word;\">numeric</td><td style=\"padding:8px;word-wrap:break-word;\">NULL on a few rows — a known upstream data gap</td></tr></table>"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f5226ce",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 28
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "f0892aa",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Tasks",
+            "header_size": "h2",
+            "title_color": "#14151A"
+          },
+          "elements": []
+        },
+        {
+          "id": "t1cont1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 12 },
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+            "padding": { "unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true }
+          },
+          "elements": [
+            {
+              "id": "t1step1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 0 4px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0E9C8B;border:1px solid #E0F4F1;\">STEP 1 OF 5</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "t1head1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": { "title": "Task 1 — Reproduce the Bug", "header_size": "h3", "title_color": "#14151A" },
+              "elements": []
+            },
+            {
+              "id": "t1text1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Run the current dashboard query (starter/dashboard_query.sql, provided as-is — don't edit it) and compare its row count to the number of distinct orders. The dashboard returns more rows than there are orders, and a noticeably higher total revenue. Confirm this for yourself before moving on.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "t1code1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<pre style=\"margin:0;padding:16px 18px;background:#0B1220;border-radius:10px;overflow-x:auto;\"><code style=\"font-family:monospace;font-size:13px;line-height:1.6;color:#F3F1EA;\">import sqlite3\nconn = sqlite3.connect('lab.db')\ncur = conn.cursor()\ncur.execute(open('starter/dashboard_query.sql').read())\nrows = cur.fetchall()\nprint('dashboard rows:', len(rows))\nprint('distinct orders:', cur.execute('SELECT COUNT(DISTINCT order_id) FROM orders').fetchone()[0])</code></pre>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "t2cont1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 12 },
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+            "padding": { "unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true }
+          },
+          "elements": [
+            {
+              "id": "t2step1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 0 4px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">STEP 2 OF 5</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "t2head1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": { "title": "Task 2 — Find the Grain Problem", "header_size": "h3", "title_color": "#14151A" },
+              "elements": []
+            },
+            {
+              "id": "t2text1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Query orders directly. Some order_ids appear 2 or 3 times — look at their status, updated_at and order_version. The table isn't at one-row-per-order grain; it's at one-row-per-status-update grain, and that's exactly what fans out when it's joined to order_items.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "t2code1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<pre style=\"margin:0;padding:16px 18px;background:#0B1220;border-radius:10px;overflow-x:auto;\"><code style=\"font-family:monospace;font-size:13px;line-height:1.6;color:#F3F1EA;\">SELECT order_id, COUNT(*)\nFROM orders\nGROUP BY order_id\nHAVING COUNT(*) > 1;</code></pre>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "t3cont1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 12 },
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+            "padding": { "unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true }
+          },
+          "elements": [
+            {
+              "id": "t3step1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 0 4px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFEAE2;color:#FF5A36;border:1px solid #FFEAE2;\">STEP 3 OF 5</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "t3head1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": { "title": "Task 3 — Deduplicate to One Row per Order", "header_size": "h3", "title_color": "#14151A" },
+              "elements": []
+            },
+            {
+              "id": "t3text1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Keep only the latest version of each order. <code>orders</code> is an append-only, event-sourced fact — \"the current state of an order\" isn't handed to you as one row per key, it has to be derived by picking one row per business key out of every version that was ever written.</p><p>A naive <code>SELECT * FROM orders GROUP BY order_id</code> looks like it dedupes, but it doesn't reliably: most engines, SQLite included, allow non-aggregated columns in the SELECT list that aren't in the GROUP BY, and silently return an <strong>arbitrary</strong> row's value for them — <code>GROUP BY order_id</code> only guarantees one row per order, not that it's the latest one. A correlated-subquery approach using <code>MAX(updated_at)</code> doesn't fully solve it either: <code>updated_at</code> is NULL on an order's very first row, and under standard NULL semantics comparisons against NULL silently exclude or mishandle that row. At least one order also has two rows sharing the exact same <code>updated_at</code> (a replayed webhook), plus another with two rows that are both NULL — so \"the row with the latest updated_at\" isn't even unique, and the tie has to be broken deterministically.</p><p>The reliable pattern for \"latest row per key\" is a window function: <code>COALESCE(updated_at, order_ts)</code> as the primary ordering key, <code>order_version</code> as an explicit tie-break, and <code>ROW_NUMBER() OVER (PARTITION BY order_id ORDER BY ...)</code> to rank rows within each order — then filter to <code>rn = 1</code>.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "t3hint1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"margin-top:4px;padding:14px 18px;background:#FBEED9;border-left:4px solid #D98F1B;border-radius:10px;\"><strong style=\"color:#D98F1B;\">Hint</strong><span style=\"color:#54575F;\"> — Partition by order_id, order by the coalesced timestamp then version, keep rn&nbsp;=&nbsp;1.</span></div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "t4cont1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 12 },
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+            "padding": { "unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true }
+          },
+          "elements": [
+            {
+              "id": "t4step1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 0 4px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FBEED9;color:#D98F1B;border:1px solid #FBEED9;\">STEP 4 OF 5</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "t4head1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": { "title": "Task 4 — Fix the Join Instead of the Symptom", "header_size": "h3", "title_color": "#14151A" },
+              "elements": []
+            },
+            {
+              "id": "t4text1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Even with orders deduplicated to one row per order, joining it straight to <code>order_items</code> and grouping is fragile — that conflates two different problems into a single <code>GROUP BY</code>. <code>order_items</code> is correctly at line-item grain, so joining it to the order-grain <code>orders</code> table is a legitimate one-to-many join, unlike the status-update fan-out you just fixed in Task 3. But once you group by <code>order_id</code> to collapse that expected fan-out, every non-aggregated column you select (<code>status</code>, <code>customer_id</code>, ...) must either be in the GROUP BY or wrapped in an aggregate — miss that, and SQLite (like MySQL's non-strict mode) won't error, it will just hand back an arbitrary row's value for that column, which is easy to miss because the query still runs and mostly looks right.</p><p>Aggregating <code>order_items</code> to order grain first — one row per <code>order_id</code>, with revenue already summed — turns the second join into a clean 1:1 merge against your deduplicated orders, so there's no fan-out left to accidentally group away.</p><p>Separately, one line item has a NULL <code>unit_price</code>. <code>SUM()</code> ignores NULLs rather than propagating them, so <code>SUM(quantity * unit_price)</code> silently drops that line item's contribution to revenue instead of failing loudly — the total still looks plausible, just wrong. Use <code>COALESCE(unit_price, 0)</code> to make the zero explicit, and add a <code>has_missing_price</code> flag so anyone reading the output knows that order's revenue is incomplete rather than assuming it's exact.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "t4hint1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"margin-top:4px;padding:14px 18px;background:#FBEED9;border-left:4px solid #D98F1B;border-radius:10px;\"><strong style=\"color:#D98F1B;\">Hint</strong><span style=\"color:#54575F;\"> — Aggregate order_items to order grain in its own step before joining anything to it.</span></div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "t5cont1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 12 },
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+            "padding": { "unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true }
+          },
+          "elements": [
+            {
+              "id": "t5step1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 0 4px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0E9C8B;border:1px solid #E0F4F1;\">STEP 5 OF 5</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "t5head1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": { "title": "Task 5 — Assemble and Verify the Trusted Query", "header_size": "h3", "title_color": "#14151A" },
+              "elements": []
+            },
+            {
+              "id": "t5text1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Combine Tasks 3 and 4 into one query in starter/solution.sql returning exactly one row per order_id, with columns order_id, status, revenue, has_missing_price. Then run the automated check: python tests/test_solution.py. It checks required columns, one-row-per-order grain, and an exact match against the trusted revenue and status for every order — and exits non-zero if any check fails.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f437209",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "892a58c",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Expected output",
+            "header_size": "h2",
+            "title_color": "#14151A"
+          },
+          "elements": []
+        },
+        {
+          "id": "a2db080",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Your query should return 12 rows — one per order in the dataset — with combined revenue of $359.00. The unfixed dashboard query returns 17 rows and $490.00 for the same data.</p>",
+            "text_color": "#54575F"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "9051ba4",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "d11dee0",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Troubleshooting",
+            "header_size": "h2",
+            "title_color": "#14151A"
+          },
+          "elements": []
+        },
+        {
+          "id": "ab93f64",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "lab.db not found",
+                "tab_content": "Run python build_db.py first.",
+                "_id": "b7bbe6c"
+              },
+              {
+                "tab_title": "Still 17 rows instead of 12",
+                "tab_content": "Your dedup step isn't filtering to rn = 1, or the order_version tie-break is missing so two rows survive for an order with an exact-duplicate updated_at.",
+                "_id": "e58d361"
+              },
+              {
+                "tab_title": "Revenue is close but not exact",
+                "tab_content": "Check the COALESCE(unit_price, 0) on the NULL-price line item, or confirm you're aggregating order_items before joining, not after.",
+                "_id": "f2c1366"
+              }
+            ],
+            "title_color": "#14151A",
+            "content_color": "#54575F",
+            "border_color": "#E7E3D9",
+            "faq_schema": "yes"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "c44a79e",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "f3d60f0",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "a8aa243",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Back to Labs",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#FFFFFF",
+                "button_text_color": "#14151A",
+                "border_color": "#E7E3D9"
+              },
+              "elements": []
+            },
+            {
+              "id": "8b0a052",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Download starter files",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#5A4FE5",
+                "button_text_color": "#FFFFFF",
+                "border_color": "#5A4FE5"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

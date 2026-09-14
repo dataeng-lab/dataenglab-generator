@@ -1,11 +1,11 @@
 ---
 name: publish-practical-lab
-description: Turn a finished DataEngLab lab (the output of create-practical-lab, with page-content.md already written) into a live standalone page at dataenglab.com/labs/<slug> — building the native Elementor JSON, describing the exact change, getting the user's explicit go-ahead, then applying it through Elementor's own native mechanisms via the Novamira MCP connection. Use this whenever the user asks to publish, push live, put online, or add to the site a lab that already exists under output/<slug>/ (e.g. "publish the dedupe-late-arriving-orders lab", "put investigate-duplicate-orders on the labs page", "make this lab live"). Do NOT use this to generate the lab's content itself — that's create-practical-lab's job, and this skill should refuse to invent page content that isn't already in page-content.md. Do NOT use this for full courses — courses have their own Elementor landing-page step inside /create-course.
+description: Turn a finished DataEngLab lab (the output of the lab-design skill, with page-content.md already written) into a live standalone page at dataenglab.com/labs/<slug> — building the native Elementor JSON, describing the exact change, getting the user's explicit go-ahead, then applying it through Elementor's own native mechanisms via the Novamira MCP connection. Use this whenever the user asks to publish, push live, put online, or add to the site a lab that already exists under output/<slug>/ (e.g. "publish the dedupe-late-arriving-orders lab", "put investigate-duplicate-orders on the labs page", "make this lab live"). Do NOT use this to generate the lab's content itself — that's lab-design's job, and this skill should refuse to invent page content that isn't already in page-content.md. Do NOT use this for full courses — courses have their own Elementor landing-page step inside the course-design skill.
 ---
 
 # Publish a practical lab to dataenglab.com
 
-This skill is the one place in this repo that is allowed to make a real, visible change to the live site. Everything else here — `create-practical-lab`, the course workflow — only produces files. Treat that difference seriously: read CLAUDE.md's "Publishing to dataenglab.com" section before doing anything, and follow it exactly, not just the summary below.
+This skill is the one place in this repo that is allowed to make a real, visible change to the live site. Everything else here — `lab-design`, `course-design` — only produces files. Treat that difference seriously: read `.claude/rules/publishing.md` before doing anything, and follow it exactly, not just the summary below. (`CLAUDE.md` is now a short overview that delegates to `.claude/rules/*.md` rather than containing this section itself.)
 
 The two hard rules that shape every step below:
 
@@ -14,23 +14,23 @@ The two hard rules that shape every step below:
 
 ## Step 0 — confirm there's something to publish
 
-Find `output/<slug>/`. It must already have `page-content.md` (written by `create-practical-lab`) — if it doesn't exist yet, or `page-content.md` is missing, stop and point the user at `create-practical-lab` instead. This skill turns existing content into a live page; it does not write the business scenario, tasks, or troubleshooting copy itself. If you notice `page-content.md` is thin or inconsistent with `student-lab/README.md`, fix that divergence by editing `page-content.md` to match the README (per `create-practical-lab`'s own consistency rule) before building anything — don't paper over it in the Elementor JSON.
+Find `output/<slug>/`. It must already have `page-content.md` (written by the `lab-design` skill) — if it doesn't exist yet, or `page-content.md` is missing, stop and point the user at `lab-design` instead. This skill turns existing content into a live page; it does not write the business scenario, tasks, or troubleshooting copy itself. If you notice `page-content.md` is thin or inconsistent with `student-lab/README.md`, fix that divergence by editing `page-content.md` to match the README (per `lab-design`'s own consistency rule) before building anything — don't paper over it in the Elementor JSON.
 
-Also check whether `output/<slug>/elementor/labs-page.json` already exists from a previous run of this skill. If it does, this is an **update**, not a first publish — read it, and later describe the change as a diff (what's changing and why), not as if the page were new.
+Also check whether `output/<slug>/elementor/labs-page.json` already exists from a previous run of this skill. If it does, this is an **update**, not a first publish — read it, and later describe the change as a diff (what's changing and why), not as if the page were new. Don't assume it's compliant just because it's already written down, though: re-check it against the current corpus and `.claude/rules/elementor.md` the same way you would a fresh build, and rebuild any part that isn't traceable to a real widget/key in the corpus — a pre-existing file (or its own `SOURCE.md`) claiming something was "confirmed" in a past session is not itself evidence, since that claim isn't independently checkable from here.
 
 ## Step 1 — resolve the reference tier
 
-Same three-tier rule CLAUDE.md defines for course landing pages, applied here to the lab page:
+Same three-tier rule `.claude/rules/elementor.md` defines for course landing pages, applied here to the lab page:
 
-1. `references/elementor-reference.json`, if present and valid — canonical, use it and its version/widgets/keys.
-2. Otherwise, the existing `elementor/` corpus (`elementor/course-page-template.json`, `elementor/sections/*.json`) for widget types and setting keys, combined with the **confirmed live palette in `references/dataenglab-live-theme.md`** — not the palette in `references/brand.md`. This matters more here than it might seem: CLAUDE.md's own top-level "Brand" section is a verbatim copy of `references/brand.md`'s blue palette (`#3D73FF` primary), and that palette is explicitly superseded for anything Elementor. Use the live tokens (indigo `#5A4FE5` primary, coral, teal, amber accents, ink `#14151A` text, warm off-white `#FBFBF8` background) — see `references/lab-page-elementor.md` in this skill for the full table and worked widget examples.
+1. Root `elementor-reference.json`, if present and valid, is canonical; use it and its version/widgets/keys.
+2. Otherwise, the existing `elementor/` corpus (`elementor/course-page-template.json`, `elementor/sections/*.json`) for widget types and setting keys, combined with the confirmed live theme tokens documented in `elementor/README.md`. Use the live tokens (indigo `#5A4FE5` primary, coral, teal, amber accents, ink `#14151A` text, warm off-white `#FBFBF8` background); see `contracts/lab-page-elementor.md` in this skill for the full table and worked widget examples.
 3. If neither exists or parses: don't invent JSON. Write `output/<slug>/elementor/REFERENCE_REQUIRED.md` explaining what's missing, and stop — no partial page.
 
-As of this writing, tier 1 doesn't exist in this repo, so tier 2 applies — but check for `references/elementor-reference.json` fresh each time rather than assuming that stays true.
+As of this writing, tier 1 doesn't exist in this repo, so tier 2 applies — but check for root `elementor-reference.json` fresh each time rather than assuming that stays true.
 
 ## Step 2 — build the Elementor JSON
 
-Read `references/lab-page-elementor.md` now — it has the section-by-section mapping from `page-content.md` to widgets (badges → pill row, outcomes → icon-list, environment tables → text-editor with plain HTML tables, tasks+hints → accordion, troubleshooting → accordion, matching the FAQ pattern already in `elementor/sections/07-faq.json`), plus concrete JSON snippets pulled from the existing corpus so you're extending real patterns, not inventing new ones.
+Read `contracts/lab-page-elementor.md` now — it has the section-by-section mapping from `page-content.md` to widgets (badges → pill row, outcomes → icon-list, environment tables → text-editor with plain HTML tables, tasks+hints → accordion, troubleshooting → accordion, matching the FAQ pattern already in `elementor/sections/07-faq.json`), plus concrete JSON snippets pulled from the existing corpus so you're extending real patterns, not inventing new ones.
 
 Write the result to `output/<slug>/elementor/labs-page.json`. Requirements, all of which come straight from CLAUDE.md's Elementor section:
 
@@ -79,7 +79,7 @@ Tell the user: the live URL (or confirmation of exactly what changed, if you cou
 
 ## Reference
 
-- `references/lab-page-elementor.md` — the page-content.md → widget mapping, palette table, and worked JSON snippets for this skill specifically.
+- `contracts/lab-page-elementor.md` — the page-content.md → widget mapping, palette table, and worked JSON snippets for this skill specifically.
 - `elementor/course-page-template.json`, `elementor/sections/07-faq.json` — the corpus this skill's Elementor JSON must stay traceable to.
-- `references/dataenglab-live-theme.md` — the palette to use (not `references/brand.md`).
-- `CLAUDE.md`'s "Elementor" and "Publishing to dataenglab.com" sections — the rules this skill implements; read them for anything this file simplified.
+- `elementor/README.md` — the live theme token source to use for Elementor output.
+- `.claude/rules/elementor.md` and `.claude/rules/publishing.md` — the rules this skill implements; read them for anything this file simplified. There is no "Brand" section anywhere in `CLAUDE.md` or `.claude/rules/`; the live palette lives only in `elementor/README.md`'s "Live theme tokens" table.

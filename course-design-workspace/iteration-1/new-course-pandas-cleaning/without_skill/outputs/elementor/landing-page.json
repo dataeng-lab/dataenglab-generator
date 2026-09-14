@@ -1,0 +1,982 @@
+{
+  "title": "Pandas Data Cleaning Basics: Nulls and Duplicates - Course Landing Page",
+  "type": "page",
+  "version": "0.1",
+  "content": [
+    {
+      "id": "2000001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "flex_align_items": "stretch",
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "2000002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+            "padding": { "unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true },
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 10 },
+            "_column_size": 57
+          },
+          "elements": [
+            {
+              "id": "2000003",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">pandas</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "2000004",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Pandas Data Cleaning Basics: Nulls and Duplicates",
+                "header_size": "h1",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "2000005",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Learn to clean a messy customer feedback export with pandas &mdash; drop rows missing required data, fill optional blanks with clear placeholders, and collapse duplicate form submissions down to one trustworthy row &mdash; validated end to end by an automated pytest suite.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "2000006",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Beginner</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">34 min lecture + 56 min practical</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">4 lessons &middot; 2 quizzes</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "2000007",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 10 }
+              },
+              "elements": [
+                {
+                  "id": "2000008",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Enroll Now",
+                    "link": { "url": "#", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "2000009",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Preview Curriculum",
+                    "link": { "url": "#curriculum", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#14151A",
+                    "border_color": "#E7E3D9"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2000010",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 12 }
+              },
+              "elements": [
+                {
+                  "id": "2000011",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "2000012",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "4", "header_size": "h3", "title_color": "#14151A" },
+                      "elements": []
+                    },
+                    {
+                      "id": "2000013",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": { "editor": "<span>Lessons</span>", "text_color": "#54575F" },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "2000014",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "2000015",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "2", "header_size": "h3", "title_color": "#14151A" },
+                      "elements": []
+                    },
+                    {
+                      "id": "2000016",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": { "editor": "<span>Quizzes</span>", "text_color": "#54575F" },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "2000017",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 10 },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "2000018",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": { "title": "1", "header_size": "h3", "title_color": "#14151A" },
+                      "elements": []
+                    },
+                    {
+                      "id": "2000019",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": { "editor": "<span>Graded practical lab</span>", "text_color": "#54575F" },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2000020",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+            "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+            "padding": { "unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true },
+            "flex_direction": "column",
+            "flex_gap": { "unit": "px", "size": 10 },
+            "_column_size": 43
+          },
+          "elements": [
+            {
+              "id": "2000021",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": { "title": "Tools you will use", "header_size": "h2", "title_color": "#14151A" },
+              "elements": []
+            },
+            {
+              "id": "2000022",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": { "editor": "<p>You will work hands-on with the same small, dependable stack most Python data cleaning work relies on.</p>", "text_color": "#54575F" },
+              "elements": []
+            },
+            {
+              "id": "2000023",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Python 3.11+</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">pandas 2.x</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">pytest</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">CSV</span>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2000030",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "2000031",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "2000032",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "2000033",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "What You'll Learn", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "2000034",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Skills you can put to work after four lessons.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2000035",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "2000036",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "2000037",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Explain why missing values and duplicate rows silently break downstream analysis.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000038a" },
+                      { "text": "Detect missing values in a pandas DataFrame with isna()/isnull() and summarize them per column.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000038b" },
+                      { "text": "Decide, per column, whether to drop or fill a missing value, and apply that decision with dropna() and fillna().", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000038c" },
+                      { "text": "Detect exact and key-based duplicate rows with duplicated() and understand the keep parameter.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000038d" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2000039",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 50 },
+              "elements": [
+                {
+                  "id": "2000040",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Remove duplicate rows deterministically with drop_duplicates(), choosing which occurrence to keep.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000041a" },
+                      { "text": "Combine null-handling and deduplication into one small, readable, testable cleaning script.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000041b" },
+                      { "text": "Validate a cleaning script's output against expected row counts and values with pytest.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000041c" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2000050",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "2000051",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "2000052",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "2000053",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Who This Is For", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "2000054",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Make sure this course matches your starting point.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2000055",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "2000056",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "2000057",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Audience</span>" },
+                  "elements": []
+                },
+                {
+                  "id": "2000058",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Who this course is for", "header_size": "h3", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "2000059",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>Complete beginners to data engineering who know basic Python (variables, functions, lists, for loops) but have little or no prior experience with pandas.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2000060",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "2000061",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Prerequisites</span>" },
+                  "elements": []
+                },
+                {
+                  "id": "2000062",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "What you need before starting", "header_size": "h3", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "2000063",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "Basic Python (variables, functions, for loops, running a .py script).", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000064a" },
+                      { "text": "Comfort opening and reading a CSV file in a text editor or spreadsheet. No prior pandas experience required.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000064b" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2000065",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "2000066",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Level</span>" },
+                  "elements": []
+                },
+                {
+                  "id": "2000067",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Beginner", "header_size": "h3", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "2000068",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>No prior data engineering experience required &mdash; just comfort with basic Python.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2000070",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "custom_id": "curriculum"
+      },
+      "elements": [
+        {
+          "id": "2000071",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "2000072",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "2000073",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Curriculum", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "2000074",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "2 modules, 4 lessons, 2 quizzes, and one graded practical lab.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2000075",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "Module 1: Understanding and Handling Missing Data",
+                "tab_content": "01. Why Nulls and Duplicates Break Analysis &mdash; 12 min lecture, 3 min practical<br>02. Finding and Handling Missing Values with pandas &mdash; 8 min lecture, 15 min practical<br>Quiz: quiz-01-missing-data.md",
+                "_id": "2000076"
+              },
+              {
+                "tab_title": "Module 2: Deduplicating and Shipping Clean Data (Practical Lab)",
+                "tab_content": "03. Finding and Removing Duplicate Rows with pandas &mdash; 8 min lecture, 15 min practical<br>04. Building a Clean, Validated Data-Cleaning Pipeline &mdash; 6 min lecture, 23 min practical<br>Quiz: quiz-02-duplicates-and-pipeline.md",
+                "_id": "2000077"
+              }
+            ],
+            "title_color": "#14151A",
+            "content_color": "#54575F",
+            "border_color": "#E7E3D9",
+            "faq_schema": "yes"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "2000080",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": { "unit": "deg", "size": 160 }
+      },
+      "elements": [
+        {
+          "id": "2000081",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "2000082",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "2000083",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Practical Lab", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "2000084",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Clean a real, messy customer feedback export in pandas.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2000085",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "2000086",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 70 },
+              "elements": [
+                {
+                  "id": "2000087",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Business scenario", "header_size": "h4", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "2000088",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>GreenLeaf Analytics runs a customer feedback form for a small retail chain. The raw daily export is messy: some customers left the rating field blank, some entries are missing the email address needed to identify the customer, some optional fields (comments, region) are blank, and a number of customers accidentally submitted the form twice for the same date. Before the weekly satisfaction report can be trusted, this raw export must be cleaned: rows missing required fields removed, optional blanks filled with clear placeholder text, and duplicate submissions collapsed down to a single, most-recent row.</p>", "text_color": "#54575F" },
+                  "elements": []
+                },
+                {
+                  "id": "2000089",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Deliverable", "header_size": "h4", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "2000090",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>A Python script (clean_customer_feedback.py) that reads customer_feedback_raw.csv, drops rows missing a required field, fills optional blanks with clear placeholder text, deduplicates repeat submissions by keeping the last occurrence, and writes the result to a clean CSV file, verified by an automated pytest suite.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2000091",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 30, "flex_justify_content": "center" },
+              "elements": [
+                {
+                  "id": "2000092",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Start the Lab",
+                    "link": { "url": "#", "is_external": "", "nofollow": "" },
+                    "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2000100",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true }
+      },
+      "elements": [
+        {
+          "id": "2000101",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": { "unit": "px", "size": 16 },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "2000102",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "2000103",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "What You'll Produce", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "2000104",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "A tested, runnable pandas cleaning script, not just slides.", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2000105",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "2000106",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 60 },
+              "elements": [
+                {
+                  "id": "2000107",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      { "text": "pytest against tests/test_clean_customer_feedback.py exits with status 0.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000108a" },
+                      { "text": "Rows with a missing customer_email or a missing rating are absent from the cleaned CSV.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000108b" },
+                      { "text": "The cleaned CSV has no null/NaN values in any column.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000108c" },
+                      { "text": "For every repeated (customer_email, survey_date) pair, only the last occurrence survives in the cleaned CSV.", "selected_icon": { "value": "fas fa-circle", "library": "fa-solid" }, "_id": "2000108d" }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "2000109",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+                "padding": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true },
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 10 },
+                "_column_size": 40
+              },
+              "elements": [
+                {
+                  "id": "2000110",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Automated validation", "header_size": "h4", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "2000111",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>Every lesson builds toward clean_customer_feedback.py, a real pandas script you write and run yourself. Your work is checked the same way a data engineering team would review it: an automated pytest suite that inspects each cleaning step and the final output file.</p>", "text_color": "#54575F" },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2000120",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 20 },
+        "padding": { "unit": "px", "top": "48", "right": "28", "bottom": "48", "left": "28", "isLinked": false },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+        "border_radius": { "unit": "px", "top": "26", "right": "26", "bottom": "26", "left": "26", "isLinked": true },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": { "unit": "deg", "size": 160 },
+        "custom_id": "enroll"
+      },
+      "elements": [
+        {
+          "id": "2000121",
+          "elType": "container",
+          "isInner": true,
+          "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 16 } },
+          "elements": [
+            {
+              "id": "2000122",
+              "elType": "container",
+              "isInner": true,
+              "settings": { "flex_direction": "column", "flex_gap": { "unit": "px", "size": 8 }, "_column_size": 100 },
+              "elements": [
+                {
+                  "id": "2000123",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Enroll", "header_size": "div", "title_color": "#5A4FE5" },
+                  "elements": []
+                },
+                {
+                  "id": "2000124",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": { "title": "Ready to start Pandas Data Cleaning Basics?", "header_size": "h2", "title_color": "#14151A" },
+                  "elements": []
+                },
+                {
+                  "id": "2000125",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": { "editor": "<p>Go from your first isna() check to a tested pandas pipeline that turns a messy customer feedback export into a clean, trustworthy dataset, all validated automatically by pytest.</p>", "text_color": "#54575F" },
+                  "elements": []
+                },
+                {
+                  "id": "2000126",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": { "content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": { "unit": "px", "size": 10 } },
+                  "elements": [
+                    {
+                      "id": "2000127",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Enroll Now",
+                        "link": { "url": "#", "is_external": "", "nofollow": "" },
+                        "border_radius": { "unit": "px", "top": "999", "right": "999", "bottom": "999", "left": "999", "isLinked": true },
+                        "background_color": "#14151A",
+                        "button_text_color": "#FFFFFF"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}
