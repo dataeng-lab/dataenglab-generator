@@ -1,0 +1,63 @@
+{
+  "expectations": [
+    {
+      "text": "labs-page.json was created under output/dedupe-late-arriving-orders/elementor/",
+      "passed": true,
+      "evidence": "output/dedupe-late-arriving-orders/elementor/labs-page.json exists, 21 elements"
+    },
+    {
+      "text": "labs-page.json passes scripts/validate_elementor_json.py",
+      "passed": true,
+      "evidence": "summary.md: 'OK: output\\dedupe-late-arriving-orders\\elementor\\labs-page.json ... Exit status: 0'"
+    },
+    {
+      "text": "labs-page.json uses the confirmed live palette and does NOT contain #3D73FF",
+      "passed": true,
+      "evidence": "Programmatic check: live palette colors present, #3D73FF absent"
+    },
+    {
+      "text": "labs-page.json contains no header/logo/nav-menu/footer widgets",
+      "passed": true,
+      "evidence": "Widget types used: accordion, button, heading, icon-list, text-editor only; 'header' hits are heading widget's header_size key"
+    },
+    {
+      "text": "labs-page.json contains no fabricated numeric statistics, uses '#' for unknown links",
+      "passed": true,
+      "evidence": "summary.md: 'no fabricated stats appear anywhere'; programmatic check found zero non-# links"
+    },
+    {
+      "text": "SOURCE.md written, names tier 2, cites real corpus file(s) and the live-theme reference",
+      "passed": true,
+      "evidence": "SOURCE.md cites elementor/course-page-template.json, elementor/sections/07-faq.json, references/dataenglab-live-theme.md, restates unverified-draft caveat"
+    },
+    {
+      "text": "Tasks and their hints from page-content.md appear in the output, not dropped or invented",
+      "passed": true,
+      "evidence": "Programmatic check: accordion tabs include 8 entries; summary.md confirms 'hints folded into Tasks 3 and 4's tab_content'"
+    },
+    {
+      "text": "Troubleshooting entries keep the concrete symptom wording from page-content.md",
+      "passed": true,
+      "evidence": "Accordion tab titles 'output/orders_deduped.csv not found when running the test', 'Still shows O-2008 as paid, not refunded', 'O-2004 comes back paid instead of cancelled' match page-content.md verbatim"
+    },
+    {
+      "text": "The run stopped before any live-publish action",
+      "passed": true,
+      "evidence": "summary.md: 'no Novamira MCP ability... and no publish-capable browser automation was called ... Step 5 ... not executed'"
+    },
+    {
+      "text": "The stopping message names the specific page/URL and summarizes what it contains",
+      "passed": true,
+      "evidence": "summary.md's go-ahead message names 'dataenglab.com/labs/dedupe-late-arriving-orders' and lists all 8 sections with real content"
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "overall": "No suggestions - strong pass across the board, consistent with the other with_skill run."
+  }
+}

@@ -1,0 +1,786 @@
+{
+  "title": "DataEng Lab - Learning Path - Paths (#paths) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "000012b",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000129",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000128",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "0000125",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Paths",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000126",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Six paths. One connected learning system.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000127",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Each path needs a distinct promise. Instead of generic blurbs, the page should make it obvious what you study, what you practice and what becomes easier once that path is complete.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000012a",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "00000fc",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "00000f5",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Foundations Path</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00000f6",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Build the baseline",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00000f7",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Core data engineering concepts and fundamentals for learners who need fluency before platform complexity appears.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00000fb",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Python, SQL and shell comfort for practical data work",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00000f8"
+                      },
+                      {
+                        "text": "ETL vocabulary, files, tables and data movement basics",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00000f9"
+                      },
+                      {
+                        "text": "Quick wins through labs and short quizzes",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00000fa"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0000104",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "00000fd",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Storage Path</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00000fe",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Design where data lives",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00000ff",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Scalable data storage and lakehouse design for learners who need a stronger architectural foundation.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000103",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Warehouse versus lakehouse mental models",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000100"
+                      },
+                      {
+                        "text": "Layered storage, formats, partitions and table structures",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000101"
+                      },
+                      {
+                        "text": "Platform decisions that shape later transformation work",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000102"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000010c",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000105",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Transformation Path</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000106",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Turn raw into trusted",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000107",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Transform messy, raw data into structured, reliable insights through modular workflows and testing discipline.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000010b",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "dbt project conventions and reusable SQL patterns",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000108"
+                      },
+                      {
+                        "text": "Testing, documentation and dependency management",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000109"
+                      },
+                      {
+                        "text": "Trusted datasets that support analytics and business decisions",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000010a"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0000114",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "000010d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Orchestration Path</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000010e",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Automate the movement",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000010f",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Automate workflows and orchestrate complex data pipelines so repeatability and reliability become part of the craft.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000113",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "DAG structure, retries, schedules and task dependencies",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000110"
+                      },
+                      {
+                        "text": "Operational thinking around alerts, SLAs and reruns",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000111"
+                      },
+                      {
+                        "text": "Pipeline habits that feel closer to real team environments",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000112"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000011c",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000115",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Streaming Path</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000116",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Work with data in motion",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000117",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Build real-time pipelines to process and analyze data in motion when batch delivery is not enough.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000011b",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Event-driven thinking, topics and producer-consumer patterns",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000118"
+                      },
+                      {
+                        "text": "Freshness, latency, windows and late-arriving data tradeoffs",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000119"
+                      },
+                      {
+                        "text": "A practical bridge between ingestion and downstream consumers",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000011a"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0000124",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "000011d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Governance Path</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000011e",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Build trust around the platform",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000011f",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Create ownership, quality and operating standards that help teams scale confidently around shared data assets.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000123",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Quality checks, lineage visibility and data ownership habits",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000120"
+                      },
+                      {
+                        "text": "Documentation, access control and stewardship expectations",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000121"
+                      },
+                      {
+                        "text": "A modern data culture that values trust as much as speed",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000122"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

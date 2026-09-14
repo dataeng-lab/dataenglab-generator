@@ -1,0 +1,1 @@
+{"setup": [["pip", "install", "-r", "requirements.txt"]], "validate": [["pytest", "tests/", "-q"]]}

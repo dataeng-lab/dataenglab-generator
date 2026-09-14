@@ -1,0 +1,106 @@
+{
+  "title": "DataEng Lab - Learning Path - Footer (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "00001ba",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "28",
+          "bottom": "8",
+          "left": "28",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "00001b3",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span>&copy; 2026 DataEng Lab. Guided learning paths, practical courses and real project momentum.</span>",
+            "text_color": "#54575F"
+          },
+          "elements": []
+        },
+        {
+          "id": "00001b9",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "00001b4",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/dataengineering-learning-path/\" style=\"color:#54575F;text-decoration:none;\">Learning Paths</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001b5",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"color:#54575F;text-decoration:none;\">Courses</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001b6",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/certifications/\" style=\"color:#54575F;text-decoration:none;\">Certifications</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001b7",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/community/blog/\" style=\"color:#54575F;text-decoration:none;\">Blog</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001b8",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/community/\" style=\"color:#54575F;text-decoration:none;\">Community</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

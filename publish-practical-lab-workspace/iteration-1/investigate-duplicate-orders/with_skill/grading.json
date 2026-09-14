@@ -1,0 +1,17 @@
+{
+  "expectations": [
+    {"text": "labs-page.json was created under output/investigate-duplicate-orders/elementor/", "passed": true, "evidence": "output/investigate-duplicate-orders/elementor/labs-page.json exists, 31 elements, copied to outputs/labs-page.json"},
+    {"text": "labs-page.json passes scripts/validate_elementor_json.py", "passed": true, "evidence": "publish-dryrun-record.md: 'python scripts/validate_elementor_json.py ... -> OK ... Exit status: 0'"},
+    {"text": "labs-page.json uses the confirmed live palette and does NOT contain the superseded brand.md blue #3D73FF", "passed": true, "evidence": "Programmatic check: live palette colors present (#5A4FE5/#0E9C8B/#FF5A36/#D98F1B), #3D73FF absent"},
+    {"text": "labs-page.json contains no header/logo/nav-menu/footer widgets", "passed": true, "evidence": "Widget types used: accordion, button, heading, icon-list, text-editor only. Only 'header' substring hits were the heading widget's own header_size setting key (h1/h2/h3), not a site header."},
+    {"text": "labs-page.json contains no fabricated numeric statistics beyond page-content.md, uses '#' for unknown links", "passed": true, "evidence": "SOURCE.md: 'the only numbers on the page (12 rows, $359.00, 17 rows, $490.00, 25 min, 5 tasks) come directly from page-content.md'; programmatic check found zero non-# links"},
+    {"text": "SOURCE.md written, names tier 2, cites real corpus file(s) and the live-theme reference", "passed": true, "evidence": "SOURCE.md cites elementor/course-page-template.json, elementor/sections/07-faq.json, references/dataenglab-live-theme.md, and restates elementor/README.md's unverified-draft caveat"},
+    {"text": "Tasks and their hints from page-content.md appear in the output, not dropped or invented", "passed": true, "evidence": "Task 3 tab_content ends '<p><em>Hint: Partition by order_id...</em></p>'; Task 4 tab_content ends '<p><em>Hint: Aggregate order_items to order grain...</em></p>' - both hints from page-content.md present verbatim"},
+    {"text": "Troubleshooting entries keep the concrete symptom wording from page-content.md", "passed": true, "evidence": "Accordion tab titles: 'lab.db not found', 'Still 17 rows instead of 12', 'Revenue is close but not exact' - exact match to page-content.md headings"},
+    {"text": "The run stopped before any live-publish action", "passed": true, "evidence": "publish-dryrun-record.md explicitly lists every Novamira/Angie ability it did NOT call and confirms no browser automation or simulated 'yes'"},
+    {"text": "The stopping message names the specific page/URL and summarizes what it contains", "passed": true, "evidence": "publish-dryrun-record.md Step 4 message names 'dataenglab.com/labs/investigate-duplicate-orders' and walks every section with real content, ending in an explicit yes/no question"}
+  ],
+  "summary": {"passed": 10, "failed": 0, "total": 10, "pass_rate": 1.0},
+  "timing": {"total_duration_seconds": 259.7, "total_tokens": 85010},
+  "eval_feedback": {"overall": "No suggestions - this run gives strong, well-evidenced passes across the board."}
+}

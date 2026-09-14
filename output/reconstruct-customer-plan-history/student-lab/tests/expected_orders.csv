@@ -1,0 +1,16 @@
+order_id,customer_id,order_ts,amount,plan_at_order,plan_source
+O-001,C-01,2024-02-01 10:00:00,100.00,Starter,reconstructed
+O-002,C-01,2024-04-01 10:00:00,200.00,Pro,reconstructed
+O-003,C-01,2024-07-01 10:00:00,300.00,Enterprise,reconstructed
+O-004,C-02,2024-02-15 09:00:00,50.00,Starter,reconstructed
+O-005,C-02,2024-06-01 09:00:00,150.00,Pro,reconstructed
+O-006,C-03,2024-03-20 09:00:00,75.00,Starter,current_plan_only
+O-007,C-03,2024-08-01 09:00:00,80.00,Starter,current_plan_only
+O-008,C-04,2024-02-01 09:00:00,60.00,Starter,reconstructed
+O-009,C-04,2024-04-10 14:00:00,90.00,Enterprise,reconstructed
+O-010,C-04,2024-05-01 09:00:00,120.00,Enterprise,reconstructed
+O-011,C-05,2024-05-01 09:00:00,130.00,Starter,reconstructed
+O-012,C-05,2024-08-01 09:00:00,140.00,Enterprise,reconstructed
+O-013,C-06,2024-02-15 09:00:00,40.00,,unknown_pre_history
+O-014,C-06,2024-04-01 09:00:00,45.00,Pro,reconstructed
+O-015,C-07,2024-06-01 09:00:00,55.00,Starter,reconstructed

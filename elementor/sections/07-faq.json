@@ -1,0 +1,140 @@
+{
+  "title": "DataEng Lab - Learning Path - FAQ (#faq) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "000019f",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000199",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000198",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "0000196",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "FAQ",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000197",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Answer the questions that usually stop people from starting.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000019e",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "Which path should a complete beginner start with?",
+                "tab_content": "Start with Foundations Path first. It gives you the Python, SQL and mental model needed to understand why the later paths exist and how they connect.",
+                "_id": "000019a"
+              },
+              {
+                "tab_title": "Can I jump straight to orchestration or streaming?",
+                "tab_content": "Yes, if you already have strong fundamentals. For most learners, the roadmap should remain the default because orchestration and streaming are easier when storage and transformation already make sense.",
+                "_id": "000019b"
+              },
+              {
+                "tab_title": "Do I need to finish every path in strict order?",
+                "tab_content": "No. The roadmap is a recommended sequence, not a prison. It is still the best default because each path removes confusion for the one that follows.",
+                "_id": "000019c"
+              },
+              {
+                "tab_title": "How do courses, labs and quizzes work together?",
+                "tab_content": "Courses provide structure, labs create repetition and quizzes validate the concepts. The path page should connect all three so learners feel one system instead of three disconnected surfaces.",
+                "_id": "000019d"
+              }
+            ],
+            "title_color": "#14151A",
+            "content_color": "#54575F",
+            "border_color": "#E7E3D9",
+            "faq_schema": "yes"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

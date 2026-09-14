@@ -1,0 +1,2667 @@
+{
+  "title": "DataEng Lab - Course Page Template (UNVERIFIED DRAFT, inferred - placeholders for per-course content)",
+  "type": "page",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "00001c5",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center",
+        "flex_gap": {
+          "unit": "px",
+          "size": 16
+        },
+        "padding": {
+          "unit": "px",
+          "top": "18",
+          "right": "28",
+          "bottom": "18",
+          "left": "28",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "00001c3",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "nowrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 12
+            },
+            "flex_align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "00001bf",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#0E9C8B",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "width": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "flex_align_items": "center",
+                "flex_justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "00001be",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "DL",
+                    "header_size": "div",
+                    "title_color": "#FFFFFF",
+                    "align": "center"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "00001c2",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 2
+                }
+              },
+              "elements": [
+                {
+                  "id": "00001c0",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "DataEng Lab",
+                    "header_size": "div",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001c1",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span>Guided learning paths</span>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "00001c4",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 8
+            },
+            "flex_justify_content": "flex-end",
+            "flex_align_items": "center",
+            "_column_size": 60
+          },
+          "elements": [
+            {
+              "id": "00001bb",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Courses",
+                "link": {
+                  "url": "https://dataenglab.com/data-engineering-courses/",
+                  "is_external": "y",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#FFFFFF",
+                "button_text_color": "#14151A",
+                "border_color": "#E7E3D9"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001bc",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "{{path_name}} Path",
+                "link": {
+                  "url": "#",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#FFFFFF",
+                "button_text_color": "#14151A",
+                "border_color": "#E7E3D9"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001bd",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Enroll Now",
+                "link": {
+                  "url": "#enroll",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#14151A",
+                "button_text_color": "#FFFFFF"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "00001e2",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "flex_align_items": "stretch"
+      },
+      "elements": [
+        {
+          "id": "00001d8",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "26",
+              "right": "26",
+              "bottom": "26",
+              "left": "26",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "unit": "px",
+              "size": 10
+            },
+            "_column_size": 57
+          },
+          "elements": [
+            {
+              "id": "00001c6",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#0B5A50;border:1px solid #E0F4F1;\">{{path_name}} Path</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001c7",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "{{course_title}}",
+                "header_size": "h1",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001c8",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>{{course_one_line_pitch}}</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001c9",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">{{level}}</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">{{duration}}</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">{{format}}</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001cd",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                }
+              },
+              "elements": [
+                {
+                  "id": "00001ca",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Enroll Now",
+                    "link": {
+                      "url": "#enroll",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "999",
+                      "right": "999",
+                      "bottom": "999",
+                      "left": "999",
+                      "isLinked": true
+                    },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001cb",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Preview Curriculum",
+                    "link": {
+                      "url": "#curriculum",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "999",
+                      "right": "999",
+                      "bottom": "999",
+                      "left": "999",
+                      "isLinked": true
+                    },
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#14151A",
+                    "border_color": "#E7E3D9"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001cc",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Download Syllabus",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "999",
+                      "right": "999",
+                      "bottom": "999",
+                      "left": "999",
+                      "isLinked": true
+                    },
+                    "background_color": "#ECEAFB",
+                    "button_text_color": "#5A4FE5",
+                    "border_color": "#ECEAFB"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "00001d7",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "00001d0",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "00001ce",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "{{lessons_count}}",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "00001cf",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span>Lessons</span>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "00001d3",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "00001d1",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "{{labs_count}}",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "00001d2",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span>Hands-on labs</span>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "00001d6",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "00001d4",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "{{quizzes_count}}",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "00001d5",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span>Quizzes</span>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "00001e1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "26",
+              "right": "26",
+              "bottom": "26",
+              "left": "26",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "unit": "px",
+              "size": 10
+            },
+            "_column_size": 43
+          },
+          "elements": [
+            {
+              "id": "00001d9",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tools you will use",
+                "header_size": "h2",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001da",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>{{tools_intro}}</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001db",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{tool_1}}</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{tool_2}}</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{tool_3}}</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{tool_4}}</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{tool_5}}</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001dc",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Prerequisites",
+                "header_size": "h4",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "00001e0",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "{{prerequisite_1}}",
+                    "selected_icon": {
+                      "value": "fas fa-circle",
+                      "library": "fa-solid"
+                    },
+                    "_id": "00001dd"
+                  },
+                  {
+                    "text": "{{prerequisite_2}}",
+                    "selected_icon": {
+                      "value": "fas fa-circle",
+                      "library": "fa-solid"
+                    },
+                    "_id": "00001de"
+                  },
+                  {
+                    "text": "{{prerequisite_3}}",
+                    "selected_icon": {
+                      "value": "fas fa-circle",
+                      "library": "fa-solid"
+                    },
+                    "_id": "00001df"
+                  }
+                ],
+                "icon_color": "#0E9C8B",
+                "text_color": "#14151A"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "00001f2",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "00001e6",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "00001e5",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "00001e3",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "What You'll Learn",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001e4",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Outcomes you can put to work immediately.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "00001f1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "00001eb",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "00001ea",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "{{outcome_1}}",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00001e7"
+                      },
+                      {
+                        "text": "{{outcome_2}}",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00001e8"
+                      },
+                      {
+                        "text": "{{outcome_3}}",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00001e9"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "00001f0",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "00001ef",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "{{outcome_4}}",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00001ec"
+                      },
+                      {
+                        "text": "{{outcome_5}}",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00001ed"
+                      },
+                      {
+                        "text": "{{outcome_6}}",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "00001ee"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0000204",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000202",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000201",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "00001ff",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Who This Is For",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000200",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Make sure the course matches your starting point.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0000203",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "00001f6",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "00001f3",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">{{audience_1_tag}}</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001f4",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{audience_1_title}}",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001f5",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{audience_1_body}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "00001fa",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "00001f7",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">{{audience_2_tag}}</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001f8",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{audience_2_title}}",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001f9",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{audience_2_body}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "00001fe",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "00001fb",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">{{audience_3_tag}}</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001fc",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{audience_3_title}}",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001fd",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{audience_3_body}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "000020e",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        },
+        "custom_id": "curriculum"
+      },
+      "elements": [
+        {
+          "id": "0000208",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000207",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "0000205",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Curriculum",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000206",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{curriculum_intro}}",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000020d",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "{{module_1_title}}",
+                "tab_content": "{{module_1_lesson_1}}<br>{{module_1_lesson_2}}<br>{{module_1_lesson_3}}",
+                "_id": "0000209"
+              },
+              {
+                "tab_title": "{{module_2_title}}",
+                "tab_content": "{{module_2_lesson_1}}<br>{{module_2_lesson_2}}<br>{{module_2_lesson_3}}",
+                "_id": "000020a"
+              },
+              {
+                "tab_title": "{{module_3_title}}",
+                "tab_content": "{{module_3_lesson_1}}<br>{{module_3_lesson_2}}<br>{{module_3_lesson_3}}",
+                "_id": "000020b"
+              },
+              {
+                "tab_title": "{{module_4_title}} (Practical Lab)",
+                "tab_content": "{{module_4_lab_summary}}",
+                "_id": "000020c"
+              }
+            ],
+            "title_color": "#14151A",
+            "content_color": "#54575F",
+            "border_color": "#E7E3D9",
+            "faq_schema": "yes"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "000021b",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160
+        }
+      },
+      "elements": [
+        {
+          "id": "0000212",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000211",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "000020f",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Practical Lab",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000210",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{lab_title}}",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000021a",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "0000217",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 70
+              },
+              "elements": [
+                {
+                  "id": "0000213",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Business scenario",
+                    "header_size": "h4",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000214",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{lab_scenario}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000215",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Deliverable",
+                    "header_size": "h4",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000216",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{lab_deliverable}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0000219",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 30,
+                "flex_justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "0000218",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Start the Lab",
+                    "link": {
+                      "url": "#",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "999",
+                      "right": "999",
+                      "bottom": "999",
+                      "left": "999",
+                      "isLinked": true
+                    },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0000221",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000220",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "000021f",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "000021c",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Your Instructor",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000021d",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{instructor_name}}",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000021e",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{instructor_bio}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "000023e",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "000023c",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000239",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 78
+              },
+              "elements": [
+                {
+                  "id": "0000237",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Continue The Path",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000238",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Keep momentum with the next course or bundle.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000023b",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 22,
+                "flex_align_items": "flex-end"
+              },
+              "elements": [
+                {
+                  "id": "000023a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Open full course catalog &rarr;</a>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000023d",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "0000228",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000222",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">{{related_1_tag}}</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000223",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{related_1_title}}",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000224",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{related_1_body}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000227",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000225",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{related_1_meta}}</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000226",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"#\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "000022f",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000229",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">{{related_2_tag}}</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000022a",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{related_2_title}}",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000022b",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{related_2_body}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000022e",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000022c",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{related_2_meta}}</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000022d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"#\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000236",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000230",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">{{related_3_tag}}</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000231",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "{{related_3_title}}",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000232",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{related_3_body}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000235",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000233",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">{{related_3_meta}}</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000234",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"#\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0000247",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000242",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000241",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "000023f",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "FAQ",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000240",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Answer the questions that usually stop people from enrolling.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0000246",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "{{faq_1_question}}",
+                "tab_content": "{{faq_1_answer}}",
+                "_id": "0000243"
+              },
+              {
+                "tab_title": "{{faq_2_question}}",
+                "tab_content": "{{faq_2_answer}}",
+                "_id": "0000244"
+              },
+              {
+                "tab_title": "{{faq_3_question}}",
+                "tab_content": "{{faq_3_answer}}",
+                "_id": "0000245"
+              }
+            ],
+            "title_color": "#14151A",
+            "content_color": "#54575F",
+            "border_color": "#E7E3D9",
+            "faq_schema": "yes"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "0000250",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160
+        },
+        "custom_id": "enroll"
+      },
+      "elements": [
+        {
+          "id": "000024f",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "000024e",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "0000248",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Enroll",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000249",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Ready to start {{course_title}}?",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000024a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>{{enroll_supporting_copy}}</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000024d",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000024b",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Enroll Now",
+                        "link": {
+                          "url": "#",
+                          "is_external": "",
+                          "nofollow": ""
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "999",
+                          "right": "999",
+                          "bottom": "999",
+                          "left": "999",
+                          "isLinked": true
+                        },
+                        "background_color": "#14151A",
+                        "button_text_color": "#FFFFFF"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000024c",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Back to {{path_name}} Path",
+                        "link": {
+                          "url": "https://dataenglab.com/dataengineering-learning-path/",
+                          "is_external": "y",
+                          "nofollow": ""
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "999",
+                          "right": "999",
+                          "bottom": "999",
+                          "left": "999",
+                          "isLinked": true
+                        },
+                        "background_color": "#FFFFFF",
+                        "button_text_color": "#14151A",
+                        "border_color": "#E7E3D9"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0000258",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center",
+        "padding": {
+          "unit": "px",
+          "top": "20",
+          "right": "28",
+          "bottom": "8",
+          "left": "28",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "0000251",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<span>&copy; 2026 DataEng Lab. Guided learning paths, practical courses and real project momentum.</span>",
+            "text_color": "#54575F"
+          },
+          "elements": []
+        },
+        {
+          "id": "0000257",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "0000252",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/dataengineering-learning-path/\" style=\"color:#54575F;text-decoration:none;\">Learning Paths</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000253",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"color:#54575F;text-decoration:none;\">Courses</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000254",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/certifications/\" style=\"color:#54575F;text-decoration:none;\">Certifications</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000255",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/community/blog/\" style=\"color:#54575F;text-decoration:none;\">Blog</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000256",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<a href=\"https://dataenglab.com/community/\" style=\"color:#54575F;text-decoration:none;\">Community</a>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

@@ -1,0 +1,1701 @@
+{
+  "title": "DataEng Lab - Learning Path - Roadmap (#roadmap) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "00000f4",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "00000f1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "00000f0",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "00000ed",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Roadmap",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00000ee",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Show the roadmap as a progression from fundamentals to production thinking.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00000ef",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>From core fundamentals to advanced techniques, this roadmap should lay out clear, step-by-step guidance and curated resources so learners understand what to study, what to practice and what each stage unlocks next.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "00000f3",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_align_items": "stretch"
+          },
+          "elements": [
+            {
+              "id": "0000068",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "gradient",
+                "background_color": "#E0F4F1",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 43,
+                "background_color_b": "#FFFFFF",
+                "background_gradient_angle": {
+                  "unit": "deg",
+                  "size": 180
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000065",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "From core concepts to modern platform habits",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000066",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Data engineering feels overwhelming when tools show up as disconnected logos. This sequence creates a cleaner climb: first fluency, then architecture, then transformation discipline, then operations, then real-time thinking and trust.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000067",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000050",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "000004d",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Phase 01</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000004e",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Foundations",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000004f",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Build the language, basic tools and mental model that make every later path easier to absorb.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000054",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "0000051",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Phase 02</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000052",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Storage",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000053",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Understand where data lands, how it is organized and why storage patterns shape later decisions.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000058",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "0000055",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Phase 03</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000056",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Transformation",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000057",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Learn how raw data becomes trusted, reusable datasets with tests, documentation and modular workflows.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "000005c",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "0000059",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Phase 04</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005a",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Orchestration",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005b",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Operate pipelines through scheduling, dependencies, retries and monitoring expectations.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000060",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "000005d",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Phase 05</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005e",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Streaming",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000005f",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Move into event-driven data movement where freshness, throughput and real-time behavior matter.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000064",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        }
+                      },
+                      "elements": [
+                        {
+                          "id": "0000061",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#ECEAFB;color:#5A4FE5;border:1px solid #ECEAFB;\">Phase 06</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000062",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Governance",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000063",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Build trust with quality, lineage, ownership, documentation and clear operating standards.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "00000f2",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "_column_size": 57
+              },
+              "elements": [
+                {
+                  "id": "00000b5",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_align_items": "flex-start",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "00000ac",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "gradient",
+                        "background_color": "#E0F4F1",
+                        "background_color_b": "#ECEAFB",
+                        "background_gradient_angle": {
+                          "unit": "deg",
+                          "size": 145
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "16",
+                          "bottom": "16",
+                          "left": "16",
+                          "isLinked": true
+                        },
+                        "flex_align_items": "center",
+                        "flex_justify_content": "center",
+                        "width": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "min_height": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "_column_size": 16
+                      },
+                      "elements": [
+                        {
+                          "id": "00000ab",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "01",
+                            "header_size": "h3",
+                            "title_color": "#14151A",
+                            "align": "center"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "00000b4",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 8
+                        },
+                        "_column_size": 84
+                      },
+                      "elements": [
+                        {
+                          "id": "00000ad",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Foundations Path",
+                            "header_size": "h3",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000ae",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Get comfortable with Python, SQL and the core concepts that explain what a data engineer actually does day to day.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000af",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Python</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">SQL</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Core concepts</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000b3",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "icon_list": [
+                              {
+                                "text": "Write small practical scripts and queries with less hesitation",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000b0"
+                              },
+                              {
+                                "text": "Understand how data moves across files, tables and pipelines",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000b1"
+                              },
+                              {
+                                "text": "Enter later paths with a cleaner mental model of the field",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000b2"
+                              }
+                            ],
+                            "icon_color": "#FF5A36",
+                            "text_color": "#14151A"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "00000c0",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_align_items": "flex-start",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "00000b7",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "gradient",
+                        "background_color": "#E0F4F1",
+                        "background_color_b": "#ECEAFB",
+                        "background_gradient_angle": {
+                          "unit": "deg",
+                          "size": 145
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "16",
+                          "bottom": "16",
+                          "left": "16",
+                          "isLinked": true
+                        },
+                        "flex_align_items": "center",
+                        "flex_justify_content": "center",
+                        "width": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "min_height": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "_column_size": 16
+                      },
+                      "elements": [
+                        {
+                          "id": "00000b6",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "02",
+                            "header_size": "h3",
+                            "title_color": "#14151A",
+                            "align": "center"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "00000bf",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 8
+                        },
+                        "_column_size": 84
+                      },
+                      "elements": [
+                        {
+                          "id": "00000b8",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Storage Path",
+                            "header_size": "h3",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000b9",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Learn the architecture layer: warehouses, data lakes, layered tables and lakehouse tradeoffs that shape downstream work.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000ba",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Warehousing</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Lakehouse</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Table design</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000be",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "icon_list": [
+                              {
+                                "text": "Explain where datasets live and how layers are organized",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000bb"
+                              },
+                              {
+                                "text": "Reason about raw, staged and trusted storage patterns",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000bc"
+                              },
+                              {
+                                "text": "Prepare for transformation work with stronger platform context",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000bd"
+                              }
+                            ],
+                            "icon_color": "#FF5A36",
+                            "text_color": "#14151A"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "00000cb",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_align_items": "flex-start",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "00000c2",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "gradient",
+                        "background_color": "#E0F4F1",
+                        "background_color_b": "#ECEAFB",
+                        "background_gradient_angle": {
+                          "unit": "deg",
+                          "size": 145
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "16",
+                          "bottom": "16",
+                          "left": "16",
+                          "isLinked": true
+                        },
+                        "flex_align_items": "center",
+                        "flex_justify_content": "center",
+                        "width": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "min_height": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "_column_size": 16
+                      },
+                      "elements": [
+                        {
+                          "id": "00000c1",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "03",
+                            "header_size": "h3",
+                            "title_color": "#14151A",
+                            "align": "center"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "00000ca",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 8
+                        },
+                        "_column_size": 84
+                      },
+                      "elements": [
+                        {
+                          "id": "00000c3",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Transformation Path",
+                            "header_size": "h3",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000c4",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Move into dbt-style workflows where testing, documentation and modular thinking turn SQL work into a maintainable practice.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000c5",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">dbt</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Testing</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Analytics engineering</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000c9",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "icon_list": [
+                              {
+                                "text": "Create clearer transformation layers and dependencies",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000c6"
+                              },
+                              {
+                                "text": "Work with reusable, trustworthy models instead of ad hoc queries",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000c7"
+                              },
+                              {
+                                "text": "Think in terms of projects, standards and team-ready workflows",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000c8"
+                              }
+                            ],
+                            "icon_color": "#FF5A36",
+                            "text_color": "#14151A"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "00000d6",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_align_items": "flex-start",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "00000cd",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "gradient",
+                        "background_color": "#E0F4F1",
+                        "background_color_b": "#ECEAFB",
+                        "background_gradient_angle": {
+                          "unit": "deg",
+                          "size": 145
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "16",
+                          "bottom": "16",
+                          "left": "16",
+                          "isLinked": true
+                        },
+                        "flex_align_items": "center",
+                        "flex_justify_content": "center",
+                        "width": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "min_height": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "_column_size": 16
+                      },
+                      "elements": [
+                        {
+                          "id": "00000cc",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "04",
+                            "header_size": "h3",
+                            "title_color": "#14151A",
+                            "align": "center"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "00000d5",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 8
+                        },
+                        "_column_size": 84
+                      },
+                      "elements": [
+                        {
+                          "id": "00000ce",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Orchestration Path",
+                            "header_size": "h3",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000cf",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Wrap the learning path with scheduling, DAGs, monitoring and operational thinking so reliability starts to feel like part of the job.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000d0",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Airflow</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Scheduling</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Reliability</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000d4",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "icon_list": [
+                              {
+                                "text": "Understand dependencies, retries, alerts and scheduled runs",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000d1"
+                              },
+                              {
+                                "text": "Connect transformations to end-to-end pipeline behavior",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000d2"
+                              },
+                              {
+                                "text": "Finish with a more production-minded mental model",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000d3"
+                              }
+                            ],
+                            "icon_color": "#FF5A36",
+                            "text_color": "#14151A"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "00000e1",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_align_items": "flex-start",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "00000d8",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "gradient",
+                        "background_color": "#E0F4F1",
+                        "background_color_b": "#ECEAFB",
+                        "background_gradient_angle": {
+                          "unit": "deg",
+                          "size": 145
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "16",
+                          "bottom": "16",
+                          "left": "16",
+                          "isLinked": true
+                        },
+                        "flex_align_items": "center",
+                        "flex_justify_content": "center",
+                        "width": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "min_height": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "_column_size": 16
+                      },
+                      "elements": [
+                        {
+                          "id": "00000d7",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "05",
+                            "header_size": "h3",
+                            "title_color": "#14151A",
+                            "align": "center"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "00000e0",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 8
+                        },
+                        "_column_size": 84
+                      },
+                      "elements": [
+                        {
+                          "id": "00000d9",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Streaming Path",
+                            "header_size": "h3",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000da",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Build real-time pipelines that process and react to events without waiting for the next batch window to arrive.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000db",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Kafka</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Spark Streaming</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Event design</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000df",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "icon_list": [
+                              {
+                                "text": "Understand when streaming solves the right problem and when it does not",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000dc"
+                              },
+                              {
+                                "text": "Reason about windows, late data, freshness and throughput",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000dd"
+                              },
+                              {
+                                "text": "Connect ingestion patterns to downstream consumers and analytics",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000de"
+                              }
+                            ],
+                            "icon_color": "#FF5A36",
+                            "text_color": "#14151A"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "00000ec",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "nowrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_align_items": "flex-start",
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "00000e3",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "gradient",
+                        "background_color": "#E0F4F1",
+                        "background_color_b": "#ECEAFB",
+                        "background_gradient_angle": {
+                          "unit": "deg",
+                          "size": 145
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "16",
+                          "right": "16",
+                          "bottom": "16",
+                          "left": "16",
+                          "isLinked": true
+                        },
+                        "flex_align_items": "center",
+                        "flex_justify_content": "center",
+                        "width": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "min_height": {
+                          "unit": "px",
+                          "size": 84
+                        },
+                        "_column_size": 16
+                      },
+                      "elements": [
+                        {
+                          "id": "00000e2",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "06",
+                            "header_size": "h3",
+                            "title_color": "#14151A",
+                            "align": "center"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "00000eb",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 8
+                        },
+                        "_column_size": 84
+                      },
+                      "elements": [
+                        {
+                          "id": "00000e4",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Governance Path",
+                            "header_size": "h3",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000e5",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Add the guardrails that make a platform trustworthy: quality checks, documentation, ownership, access and operating standards.</p>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000e6",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Quality</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Lineage</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Ownership</span>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "00000ea",
+                          "elType": "widget",
+                          "widgetType": "icon-list",
+                          "settings": {
+                            "icon_list": [
+                              {
+                                "text": "Design for trust and stewardship, not only fast delivery",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000e7"
+                              },
+                              {
+                                "text": "Set expectations for documentation, access and data ownership",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000e8"
+                              },
+                              {
+                                "text": "Support teams with reusable platform standards and clearer accountability",
+                                "selected_icon": {
+                                  "value": "fas fa-plus",
+                                  "library": "fa-solid"
+                                },
+                                "_id": "00000e9"
+                              }
+                            ],
+                            "icon_color": "#FF5A36",
+                            "text_color": "#14151A"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

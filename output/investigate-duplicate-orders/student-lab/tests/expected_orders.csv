@@ -1,0 +1,13 @@
+order_id,status,revenue,has_missing_price
+O-1001,paid,25.00,0
+O-1002,paid,24.00,0
+O-1003,paid,40.00,0
+O-1004,refunded,20.00,0
+O-1005,paid,18.00,0
+O-1006,paid,45.00,0
+O-1007,cancelled,10.00,0
+O-1008,paid,50.00,1
+O-1009,paid,25.00,0
+O-1010,paid,25.00,0
+O-1011,paid,32.00,0
+O-1012,paid,45.00,0

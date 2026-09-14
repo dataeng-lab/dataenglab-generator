@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "No files were created under output/customer-churn-detection/", "passed": true, "evidence": "summary.md: 'output/customer-churn-detection/ does not exist and was not created ... I wrote zero files under output/ for this slug'"},
+    {"text": "The final response explicitly states the lab doesn't exist / hasn't been created yet", "passed": true, "evidence": "summary.md verbatim reply: 'there's no output/customer-churn-detection/ directory in this repo, so there's no lab there to publish'"},
+    {"text": "The final response redirects to create-practical-lab rather than fabricating content", "passed": true, "evidence": "summary.md: 'the right next step is to run the create-practical-lab skill first to generate the lab'"},
+    {"text": "No Elementor JSON or page-content.md was invented for this nonexistent lab", "passed": true, "evidence": "summary.md: 'No page-content.md, no elementor/labs-page.json, no SOURCE.md... nothing'"}
+  ],
+  "summary": {"passed": 4, "failed": 0, "total": 4, "pass_rate": 1.0},
+  "timing": {"total_duration_seconds": 50.0, "total_tokens": 49662},
+  "eval_feedback": {"overall": "Clean pass; the skill's Step 0 gate worked exactly as intended and stopped the run early with no wasted work."}
+}

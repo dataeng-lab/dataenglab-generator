@@ -1,0 +1,41 @@
+{
+  "title": "Validate and Clean CSV Data with Python",
+  "slug": "test-course",
+  "audience": "Beginners who know basic Python syntax (variables, functions, loops) but have no prior data engineering experience.",
+  "level": "beginner",
+  "prerequisites": ["Basic Python (variables, functions, for loops). No pandas experience required."],
+  "outcomes": [
+    "Explain why data must be validated before it is trusted for reporting.",
+    "Detect invalid records with pandas boolean masks.",
+    "Separate valid data from invalid data instead of silently dropping or crashing on it.",
+    "Deduplicate records deterministically by a business key.",
+    "Verify a small data pipeline with automated tests."
+  ],
+  "technologies": ["Python 3.11+", "pandas", "pytest", "CSV"],
+  "business_scenario": "A small online bookstore receives a daily CSV export of book orders from its e-commerce platform. The export regularly contains rows with a missing unit price, a zero or negative quantity, and duplicated order IDs caused by webhook retries. The reporting team cannot trust the numbers until the file is validated and cleaned.",
+  "deliverable": "A clean_orders.py script that reads orders.csv, produces clean_orders.csv and quarantine_orders.csv, and passes the provided pytest suite.",
+  "validation_criteria": [
+    "pytest against tests/test_clean_orders.py exits with status 0.",
+    "clean_orders.csv contains exactly the valid, deduplicated rows (first occurrence kept per order_id).",
+    "quarantine_orders.csv contains exactly the rows with a missing/invalid unit price or a non-positive quantity."
+  ],
+  "acquired_skills": [
+    "Explaining why data must be validated before it is trusted for reporting.",
+    "Building pandas boolean masks to detect invalid records.",
+    "Separating valid data from invalid data instead of silently dropping or crashing on it.",
+    "Deduplicating records deterministically by a business key.",
+    "Verifying a small data pipeline with automated tests."
+  ],
+  "duration_minutes": {"lecture": 30, "practical": 40},
+  "curriculum": [
+    {
+      "topic": "Data Validation Fundamentals",
+      "lessons": [
+        {"id": "01-why-data-validation-matters", "title": "Why Data Validation Matters", "objective": "Explain why raw data must be validated before it is used for reporting, and identify the categories of problems a validation step should catch.", "minutes_lecture": 5, "minutes_practical": 0},
+        {"id": "02-detecting-invalid-and-duplicate-records", "title": "Detecting Invalid and Duplicate Records with pandas", "objective": "Use pandas boolean masks to detect missing, invalid and duplicated records.", "minutes_lecture": 7, "minutes_practical": 0},
+        {"id": "03-building-a-clean-quarantine-pipeline", "title": "Building a Clean/Quarantine Pipeline", "objective": "Combine validation and deduplication into a single clean/quarantine pipeline.", "minutes_lecture": 8, "minutes_practical": 0}
+      ],
+      "quiz": "quiz-01-validation-concepts.md"
+    }
+  ]
+}

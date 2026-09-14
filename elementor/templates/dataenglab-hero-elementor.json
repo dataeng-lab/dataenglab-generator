@@ -1,0 +1,45 @@
+{
+  "content": [
+    {
+      "id": "5476ae3",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "9fd3b88",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "f45c712",
+              "elType": "widget",
+              "settings": {
+                "html": "<style>\n.hero{\n  --hero-indigo: var(--indigo, #5A4FE5);\n  --hero-indigo-dark: var(--indigo-dark, #372DBF);\n  --hero-indigo-bg: var(--indigo-bg, #ECEAFB);\n  --hero-indigo-ink: var(--indigo-ink, #2E2599);\n  --hero-teal: var(--teal, #0E9C8B);\n  --hero-teal-bg: var(--teal-bg, #E0F4F1);\n  --hero-teal-ink: var(--teal-ink, #0B5A50);\n  --hero-ink: var(--ink, #14151A);\n  --hero-ink-soft: var(--ink-soft, #54575F);\n  --hero-ink-faint: var(--ink-faint, #92959E);\n  --hero-bg: var(--bg, #FBFBF8);\n  --hero-border: var(--border, #E7E3D9);\n  --hero-panel: var(--panel-dark, #1B1940);\n  --hero-panel-tint: var(--panel-dark-tint, #2A2760);\n  --hero-panel-ink: var(--panel-dark-ink, #E4E2F5);\n  --hero-radius-sm: var(--radius-sm, 10px);\n  --hero-radius-md: var(--radius-md, 16px);\n  --hero-radius-lg: var(--radius-lg, 26px);\n  --hero-radius-full: var(--radius-full, 999px);\n  --hero-font-display: var(--font-display, 'Instrument Sans', system-ui, sans-serif);\n  --hero-font-body: var(--font-body, 'Inter', system-ui, sans-serif);\n  --hero-font-mono: var(--font-mono, 'IBM Plex Mono', ui-monospace, monospace);\n  --hero-container: var(--container, 1200px);\n\n  background: var(--hero-bg);\n  padding: 96px 24px;\n  font-family: var(--hero-font-body);\n  color: var(--hero-ink);\n}\n.hero .wrap{ max-width: var(--hero-container); margin: 0 auto; }\n.hero .hero-inner{\n  display: grid;\n  grid-template-columns: 1.05fr 0.95fr;\n  gap: 64px;\n  align-items: center;\n}\n.hero .type-tag{\n  display: inline-flex;\n  align-items: center;\n  font-family: var(--hero-font-mono);\n  font-size: 12px;\n  letter-spacing: .08em;\n  text-transform: uppercase;\n  font-weight: 600;\n  padding: 6px 12px;\n  border-radius: var(--hero-radius-full);\n}\n.hero .type-tag.indigo{\n  background: var(--hero-indigo-bg);\n  color: var(--hero-indigo-ink);\n}\n.hero h1{\n  font-family: var(--hero-font-display);\n  font-size: clamp(2.4rem, 4vw, 3.6rem);\n  line-height: 1.08;\n  font-weight: 600;\n  margin: 0 0 20px;\n  color: var(--hero-ink);\n}\n.hero h1 .accent{ color: var(--hero-indigo); }\n.hero .lede{\n  font-size: 1.15rem;\n  line-height: 1.6;\n  color: var(--hero-ink-soft);\n  max-width: 46ch;\n  margin: 0 0 32px;\n}\n.hero .hero-ctas{ display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }\n.hero .btn{\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  font-family: var(--hero-font-body);\n  font-weight: 600;\n  font-size: 1rem;\n  padding: 14px 26px;\n  border-radius: var(--hero-radius-sm);\n  text-decoration: none;\n  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;\n}\n.hero .btn-primary{\n  background: var(--hero-indigo);\n  color: #fff;\n  box-shadow: 0 8px 20px rgba(90,79,229,.28);\n}\n.hero .btn-primary:hover{ background: var(--hero-indigo-dark); transform: translateY(-1px); }\n.hero .btn-outline{\n  background: transparent;\n  color: var(--hero-ink);\n  border: 1px solid var(--hero-border);\n}\n.hero .btn-outline:hover{ border-color: var(--hero-indigo); color: var(--hero-indigo); }\n.hero .hero-note{\n  font-family: var(--hero-font-mono);\n  font-size: 11.5px;\n  letter-spacing: .06em;\n  color: var(--hero-ink-faint);\n  margin: 0;\n}\n.hero .hero-visual{ position: relative; }\n.hero .schema-panel{\n  background: var(--hero-panel);\n  color: var(--hero-panel-ink);\n  border-radius: var(--hero-radius-lg);\n  padding: 22px 22px 18px;\n  box-shadow: 0 24px 60px rgba(27,25,64,.35);\n}\n.hero .panel-head{\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  margin-bottom: 14px;\n}\n.hero .file-tag{\n  font-family: var(--hero-font-mono);\n  font-size: 12.5px;\n  color: var(--hero-ink-faint);\n  margin: 0;\n}\n.hero .status-dot{\n  width: 9px;\n  height: 9px;\n  border-radius: 50%;\n  background: var(--hero-teal);\n  box-shadow: 0 0 0 4px rgba(14,156,139,.18);\n}\n.hero pre{\n  background: var(--hero-panel-tint);\n  border-radius: var(--hero-radius-md);\n  padding: 18px;\n  font-family: var(--hero-font-mono);\n  font-size: 13px;\n  line-height: 1.65;\n  overflow-x: auto;\n  margin: 0 0 18px;\n}\n.hero .tok-com{ color: #8F8BC0; font-style: italic; }\n.hero .tok-kw{ color: #FF8AA8; }\n.hero .tok-def{ color: #FFD37A; }\n.hero .tok-type{ color: #7FD9C4; }\n.hero .tok-str{ color: #A9E39A; }\n.hero .panel-footer{\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  padding-top: 14px;\n  border-top: 1px solid rgba(255,255,255,.08);\n}\n.hero .footer-item{\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  font-size: 13px;\n  color: var(--hero-panel-ink);\n}\n.hero .icon-dot{\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  width: 22px;\n  height: 22px;\n  flex: none;\n  border-radius: var(--hero-radius-full);\n  background: var(--hero-teal-bg);\n  color: var(--hero-teal-ink);\n}\n@media (max-width: 900px){\n  .hero{ padding: 64px 20px; }\n  .hero .hero-inner{ grid-template-columns: 1fr; gap: 40px; }\n  .hero .lede{ max-width: none; }\n}\n</style>\n<section class=\"hero\">\n  <div class=\"wrap hero-inner\">\n    <div class=\"hero-copy\">\n      <span class=\"type-tag indigo\" style=\"margin-bottom:18px;\">VARCHAR</span>\n      <h1>Data engineering, learned by <span class=\"accent\">building</span>.</h1>\n      <p class=\"lede\">Build real pipelines with Python, SQL, Spark, dbt, and Airflow — guided, reviewed, and portfolio-ready.</p>\n      <div class=\"hero-ctas\">\n        <a href=\"#\" class=\"btn btn-primary\">Start for free</a>\n        <a href=\"#roadmap\" class=\"btn btn-outline\">Explore the curriculum</a>\n      </div>\n      <p class=\"hero-note\">NO PREREQUISITES · GUIDED LABS · BUILT FOR CAREER SWITCHERS TOO</p>\n    </div>\n    <div class=\"hero-visual\">\n      <div class=\"schema-panel\">\n        <div class=\"panel-head\">\n          <p class=\"file-tag\">learner_path.sql</p>\n          <span class=\"status-dot\"></span>\n        </div>\n        <pre><span class=\"tok-com\">-- your track, defined like the platform you'll build</span>\n<span class=\"tok-kw\">CREATE TABLE</span> <span class=\"tok-def\">learner_path</span> (\n  id          SERIAL <span class=\"tok-kw\">PRIMARY KEY</span>,\n  track       <span class=\"tok-type\">VARCHAR</span>   <span class=\"tok-kw\">DEFAULT</span> <span class=\"tok-str\">'data_engineering'</span>,\n  hands_on    <span class=\"tok-type\">BOOLEAN</span>   <span class=\"tok-kw\">DEFAULT</span> <span class=\"tok-str\">true</span>,\n  tools       <span class=\"tok-type\">ARRAY</span>     <span class=\"tok-kw\">DEFAULT</span> <span class=\"tok-str\">['python','sql','spark','dbt']</span>,\n  outcome     <span class=\"tok-type\">VARCHAR</span>   <span class=\"tok-kw\">DEFAULT</span> <span class=\"tok-str\">'job_ready'</span>\n);</pre>\n        <div class=\"panel-footer\">\n          <span class=\"footer-item\"><span class=\"icon-dot\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"><path d=\"M9 11l3 3L22 4\"></path><path d=\"M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11\"></path></svg></span>Graded labs in every module</span>\n          <span class=\"footer-item\"><span class=\"icon-dot\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5v14a9 3 0 0 0 18 0V5\"></path><path d=\"M3 12a9 3 0 0 0 18 0\"></path></svg></span>Production-scale sample data</span>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+              },
+              "widgetType": "html",
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": [],
+  "version": "0.4",
+  "title": "DataEngLab — Hero Section",
+  "type": "section"
+}

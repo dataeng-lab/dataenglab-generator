@@ -1,0 +1,658 @@
+{
+  "title": "DataEng Lab - Learning Path - Hero (#overview) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "000002d",
+      "elType": "container",
+      "isInner": true,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "flex_align_items": "stretch"
+      },
+      "elements": [
+        {
+          "id": "000001f",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "26",
+              "right": "26",
+              "bottom": "26",
+              "left": "26",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "unit": "px",
+              "size": 10
+            },
+            "_column_size": 57
+          },
+          "elements": [
+            {
+              "id": "000000e",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#0B5A50;border:1px solid #E0F4F1;\">Learning Paths</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "000000f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Learn Data Engineering",
+                "header_size": "h1",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000010",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Whatever your starting point, we have curated the most useful paths to build your data engineering skills. Start with the roadmap, choose the path that matches your level, then use courses, labs and quizzes to turn each phase into practical momentum.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000014",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000011",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Explore roadmap",
+                    "link": {
+                      "url": "#roadmap",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "999",
+                      "right": "999",
+                      "bottom": "999",
+                      "left": "999",
+                      "isLinked": true
+                    },
+                    "background_color": "#14151A",
+                    "button_text_color": "#FFFFFF"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000012",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Choose a path",
+                    "link": {
+                      "url": "#paths",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "999",
+                      "right": "999",
+                      "bottom": "999",
+                      "left": "999",
+                      "isLinked": true
+                    },
+                    "background_color": "#FFFFFF",
+                    "button_text_color": "#14151A",
+                    "border_color": "#E7E3D9"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000013",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Browse courses",
+                    "link": {
+                      "url": "https://dataenglab.com/data-engineering-courses/",
+                      "is_external": "y",
+                      "nofollow": ""
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "999",
+                      "right": "999",
+                      "bottom": "999",
+                      "left": "999",
+                      "isLinked": true
+                    },
+                    "background_color": "#ECEAFB",
+                    "button_text_color": "#5A4FE5",
+                    "border_color": "#ECEAFB"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000001e",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000017",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "0000015",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "100+ labs",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000016",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span>Hands-on exercises and project-style practice across the platform stack.</span>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "000001a",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "0000018",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "70+ courses",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000019",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span>Structured learning across Python, SQL, Spark, dbt, Airflow and modern data systems.</span>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "000001d",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "000001b",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "50+ quizzes",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000001c",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span>Short checks that reinforce each concept before learners move to the next phase.</span>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000002c",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "background_background": "classic",
+            "background_color": "#FBFBF8",
+            "border_border": "solid",
+            "border_color": "#E7E3D9",
+            "border_width": {
+              "unit": "px",
+              "top": "1",
+              "right": "1",
+              "bottom": "1",
+              "left": "1",
+              "isLinked": true
+            },
+            "border_radius": {
+              "unit": "px",
+              "top": "26",
+              "right": "26",
+              "bottom": "26",
+              "left": "26",
+              "isLinked": true
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": true
+            },
+            "flex_direction": "column",
+            "flex_gap": {
+              "unit": "px",
+              "size": 10
+            },
+            "_column_size": 43
+          },
+          "elements": [
+            {
+              "id": "0000020",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "A better first screen for the live page",
+                "header_size": "h2",
+                "title_color": "#14151A"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000021",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>The live page already has the right ingredients: roadmap, paths and courses. This improved version tightens the hierarchy so learners can see what to do first, what each path covers and how practice supports the journey.</p>",
+                "text_color": "#54575F"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000024",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000022",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Roadmap before tooling",
+                    "header_size": "h4",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000023",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span>Show the order of capabilities before asking learners to pick isolated technologies.</span>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0000027",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000025",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Six focused paths",
+                    "header_size": "h4",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000026",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span>Foundations, storage, transformation, orchestration, streaming and governance each need a clear promise.</span>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000002a",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000028",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Practice tied to every phase",
+                    "header_size": "h4",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000029",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span>Courses, labs and quizzes become more useful when each one clearly supports a step in the roadmap.</span>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000002b",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Python</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">SQL</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Spark</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">dbt</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Airflow</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Kafka</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Snowflake</span><span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Iceberg</span>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "Bash(python scripts/run_checks.py:*)",
+      "Bash(python scripts/validate_course.py:*)",
+      "Bash(python scripts/validate_lab.py:*)",
+      "Bash(python scripts/validate_elementor_json.py:*)",
+      "Bash(python scripts/package_student_lab.py:*)",
+      "Bash(pytest:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)"
+    ],
+    "deny": [
+      "Bash(git push:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(rm -rf:*)",
+      "Bash(ssh:*)",
+      "Bash(scp:*)",
+      "Bash(ftp:*)",
+      "Bash(wp:*)"
+    ]
+  }
+}

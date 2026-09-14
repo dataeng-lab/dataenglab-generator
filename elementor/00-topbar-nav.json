@@ -1,0 +1,269 @@
+{
+  "title": "DataEng Lab - Learning Path - Topbar / Nav (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "000000d",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "space-between",
+        "flex_align_items": "center",
+        "flex_gap": {
+          "unit": "px",
+          "size": 16
+        },
+        "padding": {
+          "unit": "px",
+          "top": "18",
+          "right": "28",
+          "bottom": "18",
+          "left": "28",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "000000b",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "nowrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 12
+            },
+            "flex_align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "0000007",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#0E9C8B",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "16",
+                  "right": "16",
+                  "bottom": "16",
+                  "left": "16",
+                  "isLinked": true
+                },
+                "width": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "min_height": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "flex_align_items": "center",
+                "flex_justify_content": "center"
+              },
+              "elements": [
+                {
+                  "id": "0000006",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "DL",
+                    "header_size": "div",
+                    "title_color": "#FFFFFF",
+                    "align": "center"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000000a",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 2
+                }
+              },
+              "elements": [
+                {
+                  "id": "0000008",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "DataEng Lab",
+                    "header_size": "div",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000009",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span>Guided learning paths</span>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000000c",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 8
+            },
+            "flex_justify_content": "flex-end",
+            "flex_align_items": "center",
+            "_column_size": 60
+          },
+          "elements": [
+            {
+              "id": "0000001",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Overview",
+                "link": {
+                  "url": "#overview",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#14151A",
+                "button_text_color": "#FFFFFF"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000002",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Roadmap",
+                "link": {
+                  "url": "#roadmap",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#FFFFFF",
+                "button_text_color": "#14151A",
+                "border_color": "#E7E3D9"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000003",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Paths",
+                "link": {
+                  "url": "#paths",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#FFFFFF",
+                "button_text_color": "#14151A",
+                "border_color": "#E7E3D9"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000004",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Courses",
+                "link": {
+                  "url": "#courses",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#FFFFFF",
+                "button_text_color": "#14151A",
+                "border_color": "#E7E3D9"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000005",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Browse Catalog",
+                "link": {
+                  "url": "https://dataenglab.com/data-engineering-courses/",
+                  "is_external": "y",
+                  "nofollow": ""
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "999",
+                  "right": "999",
+                  "bottom": "999",
+                  "left": "999",
+                  "isLinked": true
+                },
+                "background_color": "#14151A",
+                "button_text_color": "#FFFFFF"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

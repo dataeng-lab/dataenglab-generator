@@ -1,0 +1,49 @@
+-- YOUR TASK: write ONE query here that returns exactly one row per
+-- order_id, with columns:
+--   order_id, customer_id, order_ts, amount, plan_at_order, plan_source
+--
+-- plan_source must be one of:
+--   'reconstructed'         - determined from customer_plan_events
+--   'current_plan_only'     - customer never appears in customer_plan_events;
+--                             their current_plan has always applied
+--   'unknown_pre_history'   - the order predates the customer's EARLIEST
+--                             logged event; plan_at_order must be NULL here
+--                             (do not guess)
+--
+-- Work through tasks 1-5 in README.md before writing this. A short outline
+-- of the shape you're building toward:
+--
+-- WITH ordered_events AS (
+--     -- Task 2: sort each customer's events into a deterministic sequence
+--     -- (changed_at alone is NOT enough — see the README on ties)
+--     SELECT ...
+--     FROM customer_plan_events
+--     ...
+-- ),
+-- plan_versions AS (
+--     -- Task 2: turn that sequence into valid_from/valid_to intervals
+--     SELECT ..., changed_at AS valid_from, LEAD(changed_at) OVER (...) AS valid_to
+--     FROM ordered_events
+-- ),
+-- no_history_versions AS (
+--     -- Task 3: customers with zero rows in customer_plan_events —
+--     -- current_plan is their only version, valid for all time
+--     SELECT ...
+--     FROM customers
+--     WHERE customer_id NOT IN (SELECT customer_id FROM customer_plan_events)
+-- ),
+-- all_versions AS (
+--     SELECT * FROM plan_versions
+--     UNION ALL
+--     SELECT * FROM no_history_versions
+-- )
+-- -- Task 4: join each order to the version in effect at order_ts,
+-- -- and flag orders that match no version at all (pre-history)
+-- SELECT ...
+-- FROM orders o
+-- LEFT JOIN all_versions v
+--     ON v.customer_id = o.customer_id
+--     AND o.order_ts >= v.valid_from
+--     AND (v.valid_to IS NULL OR o.order_ts < v.valid_to);
+
+SELECT 1; -- placeholder — replace this entire statement with your query

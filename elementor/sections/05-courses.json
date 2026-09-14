@@ -1,0 +1,1142 @@
+{
+  "title": "DataEng Lab - Learning Path - Courses (#courses) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "0000176",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000174",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000171",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 78
+              },
+              "elements": [
+                {
+                  "id": "000016e",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Courses",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000016f",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Attach the next practical course or bundle to each stage of the journey.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000170",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>This section works best when it behaves like a set of anchors instead of a random catalog preview. Learners should leave with a concrete next course or bundle based on the path they just selected.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0000173",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 22,
+                "flex_align_items": "flex-end"
+              },
+              "elements": [
+                {
+                  "id": "0000172",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Open full course catalog &rarr;</a>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0000175",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "0000136",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "000012c",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Phase 01 anchor</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000012d",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Basic Python for Data Engineers",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000012e",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Start here when the learner needs confidence with scripting, file handling and the basic rhythm of data workflows.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000132",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Supports the Foundations Path from the first week",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000012f"
+                      },
+                      {
+                        "text": "Pairs well with SQL study and beginner labs",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000130"
+                      },
+                      {
+                        "text": "Removes friction before storage, transformation and orchestration",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000131"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000135",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000133",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Foundations</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000134",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000141",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000137",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Phase 01 follow-up</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000138",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "SQL &amp; Data Modeling Starter bundle",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000139",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Use this right after Python to make querying, validation and relational thinking feel routine instead of fragile.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000013d",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Reinforces joins, aggregations and schema thinking",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000013a"
+                      },
+                      {
+                        "text": "Makes warehouse concepts easier once the Storage Path begins",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000013b"
+                      },
+                      {
+                        "text": "Works well with quizzes and small dataset labs",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000013c"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000140",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000013e",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Foundations + Storage</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000013f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "000014c",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000142",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Phase 02 bundle</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000143",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Warehouse &amp; Lakehouse Foundations bundle",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000144",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Best for learners moving into storage decisions, layered architectures and modern platform tradeoffs.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000148",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Introduces raw, staging and trusted data layers",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000145"
+                      },
+                      {
+                        "text": "Prepares learners for table design and transformation workflows",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000146"
+                      },
+                      {
+                        "text": "Frames Snowflake, BigQuery and lakehouse choices in context",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000147"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000014b",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000149",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Storage</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000014a",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000157",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "000014d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Phase 03 anchor</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000014e",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Practical dbt: From Basics to Advanced",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000014f",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Use this as the transformation anchor where SQL becomes reusable models, tests and documented workflows.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000153",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Supports the Transformation Path with strong project structure",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000150"
+                      },
+                      {
+                        "text": "Builds modular analytics engineering habits",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000151"
+                      },
+                      {
+                        "text": "Connects trusted data to downstream teams and use cases",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000152"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000156",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "0000154",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Transformation</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000155",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "0000162",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000158",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Phase 04 anchor</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000159",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Apache Airflow: From Basics to Mastery",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000015a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Place this after the transformation stage so scheduling, dependencies and retries feel attached to a real pipeline.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000015e",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Supports the Orchestration Path with DAG-first thinking",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000015b"
+                      },
+                      {
+                        "text": "Introduces monitoring, reruns and operational discipline",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000015c"
+                      },
+                      {
+                        "text": "Closes the loop on end-to-end delivery",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000015d"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000161",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000015f",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Orchestration</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000160",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "000016d",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000163",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Phase 05-06 bundle</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000164",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Streaming &amp; Data Quality Capstone bundle",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000165",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Use a capstone bundle to introduce event-driven delivery, trust, reliability and the governance expectations of a healthy platform.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000169",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Connects batch and streaming mental models",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000166"
+                      },
+                      {
+                        "text": "Adds quality checks, lineage and ownership habits",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000167"
+                      },
+                      {
+                        "text": "Gives advanced learners a production-minded finish",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000168"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000016c",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 16
+                    },
+                    "flex_justify_content": "space-between",
+                    "flex_align_items": "center",
+                    "border_border": "solid",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "border_color": "#E7E3D9",
+                    "padding": {
+                      "unit": "px",
+                      "top": "14",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000016a",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#FFFFFF;color:#14151A;border:1px solid #E7E3D9;\">Streaming + Governance</span>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000016b",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<a href=\"https://dataenglab.com/data-engineering-courses/\" style=\"font-weight:700;color:#14151A;text-decoration:none;\">Explore &rarr;</a>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

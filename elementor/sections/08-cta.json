@@ -1,0 +1,394 @@
+{
+  "title": "DataEng Lab - Learning Path - CTA (#cta) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "00001b2",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "gradient",
+        "background_color": "#E0F4F1",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        },
+        "background_color_b": "#FBFBF8",
+        "background_gradient_angle": {
+          "unit": "deg",
+          "size": 160
+        }
+      },
+      "elements": [
+        {
+          "id": "00001b1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 20
+            },
+            "flex_align_items": "stretch"
+          },
+          "elements": [
+            {
+              "id": "00001a6",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 54
+              },
+              "elements": [
+                {
+                  "id": "00001a0",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Next Step",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001a1",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Start with the roadmap, then commit to one path this week.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001a2",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>If this page does its job, the next action becomes obvious: begin with foundations, open the matching course bundle or move directly into practice with a clearer sense of where you are headed.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "00001a5",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "00001a3",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Start with Foundations",
+                        "link": {
+                          "url": "foundations-path-improved.html",
+                          "is_external": "y",
+                          "nofollow": ""
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "999",
+                          "right": "999",
+                          "bottom": "999",
+                          "left": "999",
+                          "isLinked": true
+                        },
+                        "background_color": "#14151A",
+                        "button_text_color": "#FFFFFF"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "00001a4",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Open Practice Hub",
+                        "link": {
+                          "url": "labs-home-improved.html",
+                          "is_external": "y",
+                          "nofollow": ""
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "999",
+                          "right": "999",
+                          "bottom": "999",
+                          "left": "999",
+                          "isLinked": true
+                        },
+                        "background_color": "#FFFFFF",
+                        "button_text_color": "#14151A",
+                        "border_color": "#E7E3D9"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "00001b0",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "content_width": "full",
+                "flex_direction": "row",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "_column_size": 46
+              },
+              "elements": [
+                {
+                  "id": "00001a9",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "00001a7",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Foundations Path",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "00001a8",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Continue the prototype into the first path page and validate how the roadmap branches into a concrete curriculum.</p>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "00001ac",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "00001aa",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Practice Hub",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "00001ab",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Pair the roadmap with a labs surface so every path has a place to turn theory into repetition.</p>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "00001af",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_border": "solid",
+                    "border_color": "#E7E3D9",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "26",
+                      "right": "26",
+                      "bottom": "26",
+                      "left": "26",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "24",
+                      "right": "24",
+                      "bottom": "24",
+                      "left": "24",
+                      "isLinked": true
+                    },
+                    "flex_direction": "column",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    },
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "00001ad",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Homepage Flow",
+                        "header_size": "h3",
+                        "title_color": "#14151A"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "00001ae",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>See how the homepage, learning paths and course discovery now connect as one clearer product journey.</p>",
+                        "text_color": "#54575F"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

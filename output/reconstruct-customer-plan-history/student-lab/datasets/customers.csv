@@ -1,0 +1,8 @@
+customer_id,name,current_plan,signup_ts
+C-01,Acme Inc,Enterprise,2024-01-10 09:00:00
+C-02,Beta LLC,Pro,2024-02-01 10:00:00
+C-03,Gamma Co,Starter,2024-03-15 09:00:00
+C-04,Delta Corp,Enterprise,2024-01-20 08:00:00
+C-05,Epsilon Ltd,Enterprise,2024-04-05 12:00:00
+C-06,Zeta Group,Pro,2024-02-10 09:00:00
+C-07,Theta Partners,Starter,2024-05-01 09:00:00

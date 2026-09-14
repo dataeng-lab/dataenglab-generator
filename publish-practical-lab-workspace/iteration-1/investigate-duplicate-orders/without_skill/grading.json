@@ -1,0 +1,22 @@
+{
+  "expectations": [
+    {"text": "labs-page.json was created under output/investigate-duplicate-orders/elementor/", "passed": false, "evidence": "The file was created as landing-page.json, not labs-page.json (no skill defining the labs-page.json convention was available to this baseline run)"},
+    {"text": "labs-page.json passes scripts/validate_elementor_json.py", "passed": true, "evidence": "summary.md: 'validated with scripts/validate_elementor_json.py -> OK, 0 duplicate IDs' (against landing-page.json)"},
+    {"text": "uses the confirmed live palette, does NOT contain #3D73FF", "passed": true, "evidence": "Programmatic check: live palette colors present, #3D73FF absent; summary.md explicitly says it deliberately avoided brand.md's #3D73FF"},
+    {"text": "contains no header/logo/nav-menu/footer widgets", "passed": true, "evidence": "Widget types used: accordion, button, heading, icon-list, text-editor only; 'header' hits are heading widget's header_size key"},
+    {"text": "contains no fabricated numeric statistics, uses '#' for unknown links", "passed": true, "evidence": "summary.md: 'no fabricated statistics'; programmatic check found zero non-# links"},
+    {"text": "SOURCE.md written, names tier 2, cites real corpus file(s) and the live-theme reference", "passed": true, "evidence": "SOURCE.md (per summary.md) cites tier, exact files, and restates the corpus's unverified-draft status"},
+    {"text": "Tasks and their hints from page-content.md appear in the output, not dropped or invented", "passed": true, "evidence": "Programmatic check: Task 3 and Task 4 accordion tabs contain 'Hint' text; Tasks 1/2/5 correctly have none since page-content.md gives no hint for those"},
+    {"text": "Troubleshooting entries keep the concrete symptom wording from page-content.md", "passed": true, "evidence": "Accordion tab titles include 'Still 17 rows instead of 12' etc., matching page-content.md"},
+    {"text": "The run stopped before any live-publish action", "passed": true, "evidence": "summary.md: 'I stopped before any live-site write of any kind. No novamira/* or angie/* MCP tool was called - not even read-only discovery ones'"},
+    {"text": "The stopping message names the specific page/URL and summarizes what it contains", "passed": true, "evidence": "summary.md names 'dataenglab.com/labs/investigate-duplicate-orders' and lists the page's structure and content in detail"}
+  ],
+  "summary": {"passed": 9, "failed": 1, "total": 10, "pass_rate": 0.9},
+  "timing": {"total_duration_seconds": 355.2, "total_tokens": 90475},
+  "eval_feedback": {
+    "suggestions": [
+      {"assertion": "labs-page.json was created under output/.../elementor/", "reason": "This assertion tests adherence to a naming convention the skill itself defines (labs-page.json) rather than a substantive content requirement - a baseline run with no knowledge of that convention can never pass it by design. It's still a fair discriminator for consistency across future runs (worth keeping), but shouldn't be read as a content-quality gap."}
+    ],
+    "overall": "Strong pass; the only failure is the skill-specific filename convention, which this baseline had no way to know about."
+  }
+}

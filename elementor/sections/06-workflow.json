@@ -1,0 +1,577 @@
+{
+  "title": "DataEng Lab - Learning Path - How To Use It (#workflow) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "0000195",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000193",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000192",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "000018f",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "How To Use It",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000190",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Make the page feel operational, not decorative.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000191",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>A strong learning-path page should teach people how to move through the platform week after week: learn, practice, validate, then build something that feels increasingly real.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0000194",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_align_items": "stretch"
+          },
+          "elements": [
+            {
+              "id": "0000186",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FBFBF8",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 52
+              },
+              "elements": [
+                {
+                  "id": "0000177",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Suggested weekly rhythm",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000178",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>This section keeps the page actionable. It reduces drop-off by making the next action obvious after every study session.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000185",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "content_width": "full",
+                    "flex_direction": "row",
+                    "flex_wrap": "wrap",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 10
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "000017b",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "_column_size": 50
+                      },
+                      "elements": [
+                        {
+                          "id": "0000179",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "1. Learn",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000017a",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span>Read the lesson or complete the core course material for the active path.</span>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "000017e",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "_column_size": 50
+                      },
+                      "elements": [
+                        {
+                          "id": "000017c",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "2. Practice",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "000017d",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span>Use a lab, sandbox or tutorial to convert the topic into active repetition.</span>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000181",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "_column_size": 50
+                      },
+                      "elements": [
+                        {
+                          "id": "000017f",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "3. Validate",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000180",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span>Take a quiz or short challenge to confirm the main ideas actually stuck.</span>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0000184",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "background_background": "classic",
+                        "background_color": "#FFFFFF",
+                        "border_border": "solid",
+                        "border_color": "#E7E3D9",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "1",
+                          "right": "1",
+                          "bottom": "1",
+                          "left": "1",
+                          "isLinked": true
+                        },
+                        "border_radius": {
+                          "unit": "px",
+                          "top": "26",
+                          "right": "26",
+                          "bottom": "26",
+                          "left": "26",
+                          "isLinked": true
+                        },
+                        "padding": {
+                          "unit": "px",
+                          "top": "24",
+                          "right": "24",
+                          "bottom": "24",
+                          "left": "24",
+                          "isLinked": true
+                        },
+                        "flex_direction": "column",
+                        "flex_gap": {
+                          "unit": "px",
+                          "size": 10
+                        },
+                        "_column_size": 50
+                      },
+                      "elements": [
+                        {
+                          "id": "0000182",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "4. Build",
+                            "header_size": "h4",
+                            "title_color": "#14151A"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000183",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<span>Finish the week with a small output that feels closer to a real project or pipeline.</span>",
+                            "text_color": "#54575F"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "000018e",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FBFBF8",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 48
+              },
+              "elements": [
+                {
+                  "id": "0000187",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "What this structure fixes",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000188",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>The page becomes more useful when it explains not only what exists, but how a learner should move through it without stalling.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000018d",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Clear order before tool sprawl and random scrolling",
+                        "selected_icon": {
+                          "value": "fas fa-plus",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000189"
+                      },
+                      {
+                        "text": "Stronger connection between roadmap, paths and course discovery",
+                        "selected_icon": {
+                          "value": "fas fa-plus",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000018a"
+                      },
+                      {
+                        "text": "Better support for self-paced learners who need structure",
+                        "selected_icon": {
+                          "value": "fas fa-plus",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000018b"
+                      },
+                      {
+                        "text": "A more natural bridge into foundations, labs and advanced practice pages",
+                        "selected_icon": {
+                          "value": "fas fa-plus",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000018c"
+                      }
+                    ],
+                    "icon_color": "#FF5A36",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

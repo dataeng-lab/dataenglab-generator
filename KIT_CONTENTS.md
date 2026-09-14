@@ -1,0 +1,22 @@
+# Kit contents
+
+- `.claude/commands/create-course.md`
+- `.claude/commands/review-course.md`
+- `.claude/settings.json`
+- `.gitignore`
+- `CLAUDE.md`
+- `README.md`
+- `START_HERE.md`
+- `course-requests/airflow-pipeline.md`
+- `course-requests/python-etl.md`
+- `output/.gitkeep`
+- `references/README.md`
+- `references/brand.md`
+- `scripts/package_student_lab.py`
+- `scripts/run_checks.py`
+- `scripts/validate_course.py`
+- `scripts/validate_elementor_json.py`
+- `scripts/validate_lab.py`
+- `templates/lab-spec.md`
+- `templates/lesson-template.md`
+- `templates/quiz-template.md`

@@ -1,0 +1,226 @@
+{
+  "title": "Validate and Clean CSV Data with Python - Landing Page (UNVERIFIED DRAFT)",
+  "type": "page",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "tc10001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_gap": { "unit": "px", "size": 16, "column": 16 },
+        "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#0B1220"
+      },
+      "elements": [
+        {
+          "id": "tc10002",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Validate and Clean CSV Data with Python",
+            "header_size": "h1",
+            "align": "center",
+            "title_color": "#F8FAFC",
+            "typography_typography": "custom",
+            "typography_font_weight": "700"
+          },
+          "elements": []
+        },
+        {
+          "id": "tc10003",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>A hands-on, 1-hour beginner course: detect invalid records, quarantine bad data, deduplicate orders and validate a pandas pipeline with automated tests.</p>",
+            "align": "center",
+            "text_color": "#667085"
+          },
+          "elements": []
+        },
+        {
+          "id": "tc10004",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "View Curriculum",
+            "align": "center",
+            "link": { "url": "#", "is_external": "", "nofollow": "" },
+            "background_color": "#3D73FF",
+            "button_text_color": "#F8FAFC",
+            "hover_color": "#F8FAFC",
+            "button_background_hover_color": "#285EDB",
+            "border_radius": { "unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true }
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "tc10005",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "center",
+        "flex_gap": { "unit": "px", "size": 24, "column": 24 },
+        "padding": { "unit": "px", "top": "64", "right": "24", "bottom": "64", "left": "24", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#F8FAFC"
+      },
+      "elements": [
+        {
+          "id": "tc10006",
+          "elType": "widget",
+          "widgetType": "icon-box",
+          "settings": {
+            "title_text": "Level",
+            "description_text": "Beginner",
+            "selected_icon": { "value": "fas fa-signal", "library": "fa-solid" },
+            "primary_color": "#3D73FF",
+            "title_color": "#101828",
+            "description_color": "#667085"
+          },
+          "elements": []
+        },
+        {
+          "id": "tc10007",
+          "elType": "widget",
+          "widgetType": "icon-box",
+          "settings": {
+            "title_text": "Duration",
+            "description_text": "1 hour",
+            "selected_icon": { "value": "fas fa-clock", "library": "fa-solid" },
+            "primary_color": "#3D73FF",
+            "title_color": "#101828",
+            "description_color": "#667085"
+          },
+          "elements": []
+        },
+        {
+          "id": "tc10008",
+          "elType": "widget",
+          "widgetType": "icon-box",
+          "settings": {
+            "title_text": "Stack",
+            "description_text": "Python, pandas, pytest",
+            "selected_icon": { "value": "fas fa-terminal", "library": "fa-solid" },
+            "primary_color": "#3D73FF",
+            "title_color": "#101828",
+            "description_color": "#667085"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "tc10009",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": { "unit": "px", "size": 24, "column": 24 },
+        "padding": { "unit": "px", "top": "64", "right": "24", "bottom": "64", "left": "24", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#F8FAFC"
+      },
+      "elements": [
+        {
+          "id": "tc1000a",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "What you'll build",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#101828"
+          },
+          "elements": []
+        },
+        {
+          "id": "tc1000b",
+          "elType": "widget",
+          "widgetType": "accordion",
+          "settings": {
+            "tabs": [
+              {
+                "tab_title": "Why Data Validation Matters",
+                "tab_content": "Understand why raw data must be validated before it reaches reporting, and the categories of problems a validation step should catch.",
+                "_id": "acc0001"
+              },
+              {
+                "tab_title": "Detecting Invalid and Duplicate Records with pandas",
+                "tab_content": "Use pandas boolean masks and duplicated() to find missing/invalid fields and repeated order IDs.",
+                "_id": "acc0002"
+              },
+              {
+                "tab_title": "Building a Clean/Quarantine Pipeline",
+                "tab_content": "Assemble validation and deduplication into a small, testable pipeline with two output files.",
+                "_id": "acc0003"
+              },
+              {
+                "tab_title": "Practical Lab: Clean the Bookstore Orders File",
+                "tab_content": "Implement clean_orders.py against a deterministic dataset and pass the automated pytest suite.",
+                "_id": "acc0004"
+              }
+            ],
+            "title_color": "#101828",
+            "content_color": "#667085",
+            "border_color": "#E4E7EC"
+          },
+          "elements": []
+        }
+      ]
+    },
+    {
+      "id": "tc1000c",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "flex_gap": { "unit": "px", "size": 16, "column": 16 },
+        "padding": { "unit": "px", "top": "64", "right": "24", "bottom": "80", "left": "24", "isLinked": false },
+        "background_background": "classic",
+        "background_color": "#0B1220"
+      },
+      "elements": [
+        {
+          "id": "tc1000d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Ready to clean your first dataset?",
+            "header_size": "h2",
+            "align": "center",
+            "title_color": "#F8FAFC"
+          },
+          "elements": []
+        },
+        {
+          "id": "tc1000e",
+          "elType": "widget",
+          "widgetType": "button",
+          "settings": {
+            "text": "Start the Course",
+            "align": "center",
+            "link": { "url": "#", "is_external": "", "nofollow": "" },
+            "background_color": "#12B76A",
+            "button_text_color": "#0B1220",
+            "border_radius": { "unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true }
+          },
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}

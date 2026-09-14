@@ -1,0 +1,23 @@
+-- YOUR TASK: write ONE query here that returns exactly one reliable row
+-- per order_id, with columns: order_id, status, revenue, has_missing_price.
+--
+-- Work through tasks 1-5 in README.md before writing this. A short outline
+-- of the shape you're building toward:
+--
+-- WITH latest_order AS (
+--     -- Task 3: collapse `orders` to one row per order_id (the latest version)
+--     SELECT ...
+--     FROM orders
+--     ...
+-- ),
+-- item_totals AS (
+--     -- Task 4: aggregate order_items to order grain BEFORE joining
+--     SELECT ...
+--     FROM order_items
+--     GROUP BY order_id
+-- )
+-- SELECT ...
+-- FROM latest_order lo
+-- JOIN item_totals it ON it.order_id = lo.order_id;
+
+SELECT 1; -- placeholder — replace this entire statement with your query

@@ -1,0 +1,11 @@
+order_id,book_title,quantity,unit_price,order_date
+1001,Clean Code,2,25.00,2026-01-05
+1002,The Pragmatic Programmer,1,,2026-01-05
+1003,Design Patterns,-1,40.00,2026-01-06
+1004,Refactoring,3,35.50,2026-01-06
+1004,Refactoring,3,35.50,2026-01-06
+1005,Clean Architecture,4,30.00,2026-01-07
+1006,Domain-Driven Design,0,45.00,2026-01-07
+1007,Working Effectively with Legacy Code,2,,2026-01-08
+1008,The Mythical Man-Month,1,22.50,2026-01-08
+1009,Continuous Delivery,2,38.00,2026-01-09

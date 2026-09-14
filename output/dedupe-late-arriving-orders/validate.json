@@ -1,0 +1,8 @@
+{
+    "setup": [
+        ["python", "reset.py"]
+    ],
+    "validate": [
+        ["python", "tests/test_solution.py"]
+    ]
+}

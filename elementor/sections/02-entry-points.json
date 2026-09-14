@@ -1,0 +1,459 @@
+{
+  "title": "DataEng Lab - Learning Path - Entry Points (#entry-points) (UNVERIFIED DRAFT, section split)",
+  "type": "section",
+  "version": "0.4",
+  "content": [
+    {
+      "id": "000004c",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "flex_direction": "column",
+        "flex_gap": {
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "48",
+          "right": "28",
+          "bottom": "48",
+          "left": "28",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#FBFBF8",
+        "border_border": "solid",
+        "border_color": "#E7E3D9",
+        "border_width": {
+          "unit": "px",
+          "top": "1",
+          "right": "1",
+          "bottom": "1",
+          "left": "1",
+          "isLinked": true
+        },
+        "border_radius": {
+          "unit": "px",
+          "top": "26",
+          "right": "26",
+          "bottom": "26",
+          "left": "26",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "000004a",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            },
+            "flex_justify_content": "space-between",
+            "flex_align_items": "flex-end"
+          },
+          "elements": [
+            {
+              "id": "0000049",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 8
+                },
+                "_column_size": 100
+              },
+              "elements": [
+                {
+                  "id": "0000046",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Start Here",
+                    "header_size": "div",
+                    "title_color": "#5A4FE5"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000047",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Help learners choose the right entry point before they scan the whole map.",
+                    "header_size": "h2",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000048",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>A strong learning-path page reduces decision fatigue. Instead of showing every tool at once, it first helps people identify their current starting point and then gives them a recommended route through the platform.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "000004b",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "full",
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "flex_gap": {
+              "unit": "px",
+              "size": 16
+            }
+          },
+          "elements": [
+            {
+              "id": "0000035",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "000002e",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Complete beginner</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000002f",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "I need a clear route into data engineering.",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000030",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Start with foundations, then move into storage and transformation once Python, SQL and the data lifecycle feel familiar.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000034",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Begin with Python, SQL and essential data engineering vocabulary",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000031"
+                      },
+                      {
+                        "text": "Use labs and quizzes early so confidence builds with repetition",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000032"
+                      },
+                      {
+                        "text": "Do not skip the basics just because the tooling looks exciting",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000033"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "000003d",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "0000036",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Analyst to DE</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000037",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "I already work with data, but I want stronger pipeline depth.",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000038",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Compress the first phase slightly, then spend more time on storage, dbt-style transformation and orchestration habits.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000003c",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Keep existing SQL strength and deepen engineering discipline",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000039"
+                      },
+                      {
+                        "text": "Focus on warehouses, modeling and reusable transformation workflows",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000003a"
+                      },
+                      {
+                        "text": "Build toward jobs that expect production thinking, not only reporting",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "000003b"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "0000045",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "background_background": "classic",
+                "background_color": "#FFFFFF",
+                "border_border": "solid",
+                "border_color": "#E7E3D9",
+                "border_width": {
+                  "unit": "px",
+                  "top": "1",
+                  "right": "1",
+                  "bottom": "1",
+                  "left": "1",
+                  "isLinked": true
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "26",
+                  "right": "26",
+                  "bottom": "26",
+                  "left": "26",
+                  "isLinked": true
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "24",
+                  "right": "24",
+                  "bottom": "24",
+                  "left": "24",
+                  "isLinked": true
+                },
+                "flex_direction": "column",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 10
+                },
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "000003e",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style=\"display:inline-flex;align-items:center;padding:6px 12px;margin:0 8px 8px 0;border-radius:999px;font-size:13px;font-weight:700;background:#E0F4F1;color:#0B5A50;border:1px solid #E0F4F1;\">Engineer upskilling</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000003f",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "I can code, but I need data platform context.",
+                    "header_size": "h3",
+                    "title_color": "#14151A"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000040",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Move quickly through syntax and spend more energy on data systems, orchestration, streaming tradeoffs and governance expectations.</p>",
+                    "text_color": "#54575F"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000044",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {
+                        "text": "Translate software habits into data workflows and platform choices",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000041"
+                      },
+                      {
+                        "text": "Learn warehouses, lakehouse patterns and operational data concerns",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000042"
+                      },
+                      {
+                        "text": "Use realistic projects to connect tools into end-to-end delivery",
+                        "selected_icon": {
+                          "value": "fas fa-circle",
+                          "library": "fa-solid"
+                        },
+                        "_id": "0000043"
+                      }
+                    ],
+                    "icon_color": "#0E9C8B",
+                    "text_color": "#14151A"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": []
+}
